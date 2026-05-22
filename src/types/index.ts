@@ -56,6 +56,8 @@ export interface Work {
   type: 'van-kien' | 'chinh-luan' | 'tho' | 'bao-chi' | 'khac';
   typeLabel: string;
   summary: string;
+  focusPoints?: string[];
+  sourceNote?: string;
   hasContent: boolean;
   content?: string;
 }
@@ -66,6 +68,8 @@ export interface Song {
   creator: string;
   performer: string;
   poemBy?: string;
+  context?: string;
+  theme?: string;
   audioStatus: 'placeholder';
 }
 
@@ -78,6 +82,7 @@ export interface Monument {
   year?: string;
   imagePath: string;
   note: string;
+  culturalNote?: string;
 }
 
 export interface Story {

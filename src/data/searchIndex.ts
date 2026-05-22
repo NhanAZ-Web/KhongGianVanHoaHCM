@@ -40,7 +40,7 @@ export function getSearchItems(): SearchItem[] {
     {
       sectionId: 'am-nhac',
       title: 'Âm nhạc về Bác Hồ',
-      description: 'Danh mục bài hát gợi ý, cần bổ sung audio hoặc video.',
+      description: 'Danh mục bài hát, bối cảnh, chủ đề và khu vực gắn audio/video.',
       keywords: ['âm nhạc', 'bài hát', 'Bác Hồ'],
     },
     {
@@ -58,8 +58,9 @@ export function getSearchItems(): SearchItem[] {
     {
       sectionId: 'guong-sang',
       title: 'Gương sáng và hoạt động của đơn vị',
-      description: 'Không gian cập nhật hoạt động học tập và làm theo tư tưởng Hồ Chí Minh.',
-      keywords: ['gương sáng', 'đoàn thanh niên', 'hoạt động'],
+      description:
+        'Không gian cập nhật hoạt động Chi bộ, Đoàn Thanh niên CTIM và phong trào học tập, làm theo Bác.',
+      keywords: ['gương sáng', 'đoàn thanh niên', 'CTIM', 'chi bộ', 'hoạt động'],
     },
     {
       sectionId: 'nguon',

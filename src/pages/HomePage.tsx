@@ -31,6 +31,31 @@ const unitInfo = {
     'Đoàn TNCS Hồ Chí Minh Trường Cao đẳng bán công Công nghệ và Quản trị doanh nghiệp',
 };
 
+const ctimInfo = {
+  shortName: 'Cao đẳng CTIM',
+  fullName: 'Trường Cao đẳng bán công Công nghệ và Quản trị Doanh nghiệp',
+  englishName: 'College of Technology and Industrial Management',
+  address:
+    'Số 15 Đường Trần Văn Trà, Khu Đô thị mới Nam Thành phố, phường Tân Mỹ, TP. Hồ Chí Minh',
+  campus:
+    'Khuôn viên 40.000 m² tại khu đô thị mới Nam Thành phố; có ký túc xá, sân thể dục - thể thao, sân banh, khu giải trí, nhà xưởng và phòng thí nghiệm.',
+  trainingGoal:
+    'Không ngừng nâng cao chất lượng đào tạo, đa dạng hình thức đào tạo, giúp người học tiếp cận kiến thức chuyên môn hiện đại, rèn luyện kỹ năng và phẩm chất đạo đức nghề nghiệp.',
+  youthRole:
+    'Đoàn Thanh niên Trường Cao đẳng CTIM là tổ chức nòng cốt của thanh niên trong Nhà trường, tập hợp, đoàn kết, giáo dục đoàn viên, sinh viên và tổ chức các phong trào học tập, rèn luyện, tình nguyện.',
+  youthBodies: [
+    'Ban Tổ chức - Xây dựng: tham mưu công tác tổ chức, quản lý đoàn viên và xây dựng đội ngũ cán bộ Đoàn.',
+    'Ban Học tập và Hỗ trợ Sinh viên: hỗ trợ học tập, kỹ năng, định hướng nghề nghiệp và phong trào Sinh viên 5 tốt.',
+    'Ban Phong trào: tổ chức hoạt động rèn luyện, sáng tạo, kết nối và phát triển đời sống sinh viên.',
+    'Ban Tuyên giáo: tham mưu giáo dục chính trị tư tưởng, truyền thông và định hướng thông tin cho đoàn viên, sinh viên.',
+  ],
+  partyNotes: [
+    'Chi bộ Trường Cao đẳng BC Công nghệ và Quản trị doanh nghiệp có các hoạt động xây dựng Đảng, kết nạp đảng viên, học tập nghị quyết và sinh hoạt chính trị.',
+    'Tư liệu CTIM ghi nhận hoạt động dâng hương tưởng niệm Chủ tịch Hồ Chí Minh nhân các dịp kỷ niệm lớn.',
+    'Đoàn trường nhiệm kỳ 2025 - 2027 đã ra mắt Ban Chấp hành, tiếp tục vai trò nòng cốt trong phong trào thanh niên CTIM.',
+  ],
+};
+
 const thoughtTopics: ThoughtTopic[] = [
   {
     id: 'doc-lap',
@@ -66,6 +91,45 @@ const thoughtTopics: ThoughtTopic[] = [
     description:
       'Thể hiện qua lối sống giản dị, tác phong sâu sát cơ sở, cách diễn đạt ngắn gọn, dễ hiểu.',
     icon: '05',
+  },
+];
+
+const featuredAreas = [
+  {
+    sectionId: 'cuoc-doi',
+    title: 'Cuộc đời và sự nghiệp',
+    description:
+      'Đi theo các địa điểm và mốc lịch sử: quê hương Kim Liên, trường Dục Thanh, Bến Nhà Rồng, hành trình cứu nước, 48 Hàng Ngang và Quảng trường Ba Đình.',
+  },
+  {
+    sectionId: 'tu-tuong',
+    title: 'Tư tưởng giáo dục, đạo đức, y tế',
+    description:
+      'Chuyển các chủ đề học tập thành bài học ngắn, câu hỏi tương tác và gợi ý hành động cho sinh viên, đoàn viên hôm nay.',
+  },
+  {
+    sectionId: 'tac-pham',
+    title: 'Tác phẩm và tư liệu',
+    description:
+      'Thư viện văn kiện, chính luận, thơ, báo chí; mỗi tác phẩm có bối cảnh, giá trị nội dung và liên kết với timeline.',
+  },
+  {
+    sectionId: 'am-nhac',
+    title: 'Các ca khúc về Bác',
+    description:
+      'Playlist theo chủ đề thiếu nhi, thanh niên, chiến thắng, quê hương, lăng Bác; có thể phát triển thành hoạt động nghe nhạc và đố vui.',
+  },
+  {
+    sectionId: 'tuong-dai',
+    title: 'Tượng đài trên thế giới',
+    description:
+      'Bản đồ di sản quốc tế cho thấy hình ảnh Hồ Chí Minh trong tình hữu nghị giữa Việt Nam và bạn bè năm châu.',
+  },
+  {
+    sectionId: 'cau-chuyen',
+    title: 'Những mẩu chuyện về Bác',
+    description:
+      'Các câu chuyện ngắn được tổ chức theo bài học đạo đức, câu hỏi suy ngẫm và liên hệ với việc học tập, rèn luyện trong nhà trường.',
   },
 ];
 
@@ -151,6 +215,13 @@ const works: Work[] = [
     typeLabel: 'Chính luận',
     summary:
       'Tác phẩm tố cáo bản chất áp bức của chủ nghĩa thực dân và khơi dậy tinh thần đấu tranh giải phóng dân tộc.',
+    focusPoints: [
+      'Bối cảnh Nguyễn Ái Quốc hoạt động ở Pháp và viết báo về vấn đề thuộc địa.',
+      'Giá trị tố cáo chủ nghĩa thực dân trên các mặt chính trị, kinh tế, văn hóa, xã hội.',
+      'Ý nghĩa chuẩn bị tư tưởng cho phong trào cách mạng Việt Nam.',
+    ],
+    sourceNote:
+      'Repo đã có file nội dung riêng: tac-pham-ban-an-che-do-thuc-dan-phap.md.',
     hasContent: true,
   },
   {
@@ -161,6 +232,13 @@ const works: Work[] = [
     typeLabel: 'Chính luận',
     summary:
       'Tập hợp các bài giảng huấn luyện cán bộ, đặt nền tảng tư tưởng và tổ chức cho cách mạng Việt Nam.',
+    focusPoints: [
+      'Có thể trình bày như một “sổ tay nhập môn cách mạng” dành cho cán bộ trẻ.',
+      'Nên nối với mốc Quảng Châu, Hội Việt Nam Cách mạng Thanh niên và báo Thanh niên.',
+      'Phù hợp làm bài đọc ngắn về lý tưởng, tổ chức và kỷ luật cách mạng.',
+    ],
+    sourceNote:
+      'Khi mở trang chi tiết, nên đối chiếu thêm bản văn và nguồn chính thống để chuẩn hóa trích dẫn.',
     hasContent: true,
   },
   {
@@ -171,6 +249,12 @@ const works: Work[] = [
     typeLabel: 'Thơ',
     summary:
       'Tập thơ chữ Hán ghi lại nghị lực, tâm hồn nhân văn và tinh thần lạc quan trong hoàn cảnh lao tù.',
+    focusPoints: [
+      'Nên giới thiệu theo góc nhìn văn học: hoàn cảnh sáng tác, tinh thần vượt khó, chất thép và chất tình.',
+      'Có thể chọn một vài bài đã được phép trích dẫn ngắn để minh họa, tránh chép dài.',
+      'Liên kết với mốc 1942-1943 trong timeline.',
+    ],
+    sourceNote: 'Có thể tách riêng nhóm thơ trong thư viện tác phẩm.',
     hasContent: true,
   },
   {
@@ -181,6 +265,12 @@ const works: Work[] = [
     typeLabel: 'Văn kiện',
     summary:
       'Văn kiện khai sinh nước Việt Nam Dân chủ Cộng hòa, khẳng định quyền độc lập, tự do của dân tộc Việt Nam.',
+    focusPoints: [
+      'Bối cảnh soạn thảo tại 48 Hàng Ngang và đọc tại Quảng trường Ba Đình.',
+      'Giá trị pháp lý, chính trị và tinh thần về quyền độc lập, tự do.',
+      'Nên làm trang chi tiết dạng “văn kiện - bối cảnh - ý nghĩa - địa điểm”.',
+    ],
+    sourceNote: 'Nối trực tiếp với mốc 02/09/1945 và địa điểm Ba Đình.',
     hasContent: true,
   },
   {
@@ -191,6 +281,13 @@ const works: Work[] = [
     typeLabel: 'Văn kiện',
     summary:
       'Lời hiệu triệu toàn dân đoàn kết, kiên quyết bảo vệ nền độc lập trước cuộc xâm lược trở lại.',
+    focusPoints: [
+      'Bối cảnh cuối năm 1946 khi nền độc lập non trẻ đứng trước nguy cơ xâm lược trở lại.',
+      'Tinh thần kháng chiến toàn dân, toàn diện, lâu dài.',
+      'Có thể đặt cạnh audio/video tư liệu để tạo trải nghiệm nghe - đọc.',
+    ],
+    sourceNote:
+      'Repo đã có file nội dung riêng: tac-pham-loi-keu-goi-toan-quoc-khang-chien.md.',
     hasContent: true,
   },
   {
@@ -201,6 +298,12 @@ const works: Work[] = [
     typeLabel: 'Chính luận',
     summary:
       'Tác phẩm bàn về xây dựng Đảng, chống bệnh chủ quan, hình thức, quan liêu và nâng cao tác phong cán bộ.',
+    focusPoints: [
+      'Phù hợp với chuyên đề rèn luyện tác phong cán bộ, đảng viên, đoàn viên.',
+      'Có thể chuyển thành checklist tự đánh giá: nói đi đôi với làm, chống hình thức, gần dân.',
+      'Nên liên hệ với hoạt động sinh hoạt chuyên đề của đơn vị.',
+    ],
+    sourceNote: 'Repo đã có file nội dung riêng: tac-pham-sua-doi-loi-lam-viec.md.',
     hasContent: true,
   },
   {
@@ -211,6 +314,12 @@ const works: Work[] = [
     typeLabel: 'Báo chí',
     summary:
       'Bài viết nêu rõ vai trò của dân vận và yêu cầu cán bộ phải gần dân, hiểu dân, làm việc vì dân.',
+    focusPoints: [
+      'Trục nội dung chính: dân là gốc, việc dân vận là trách nhiệm của cả hệ thống.',
+      'Có thể liên hệ hoạt động tình nguyện, khảo sát nhu cầu cộng đồng và phục vụ nhân dân.',
+      'Phù hợp đặt chung với nhóm “phong cách gần dân”.',
+    ],
+    sourceNote: 'Nên bổ sung nguồn văn bản chuẩn và ngày đăng khi làm trang chi tiết.',
     hasContent: true,
   },
   {
@@ -221,6 +330,12 @@ const works: Work[] = [
     typeLabel: 'Chính luận',
     summary:
       'Nêu bật yêu cầu rèn luyện đạo đức của người cách mạng, chống chủ nghĩa cá nhân.',
+    focusPoints: [
+      'Có thể phát triển thành bài học ngắn về cần, kiệm, liêm, chính, chí công vô tư.',
+      'Nên kèm câu hỏi tự soi chiếu cho sinh viên và đoàn viên.',
+      'Liên kết tốt với phần quiz tư tưởng, đạo đức, phong cách.',
+    ],
+    sourceNote: 'Nên đối chiếu nguồn chính thống trước khi đăng trích đoạn.',
     hasContent: true,
   },
   {
@@ -231,6 +346,60 @@ const works: Work[] = [
     typeLabel: 'Văn kiện',
     summary:
       'Văn kiện kết tinh tư tưởng, tình cảm và căn dặn của Chủ tịch Hồ Chí Minh đối với Đảng, nhân dân và thế hệ trẻ.',
+    focusPoints: [
+      'Nhấn mạnh các căn dặn về xây dựng Đảng, chăm lo nhân dân, bồi dưỡng thế hệ trẻ.',
+      'Có thể thiết kế như “lời căn dặn hôm nay”: mỗi ý gắn với một hành động cụ thể.',
+      'Phù hợp làm phần kết trang hoặc không gian suy ngẫm.',
+    ],
+    sourceNote: 'Nên có trang chi tiết riêng với nguồn kiểm chứng rõ ràng.',
+    hasContent: true,
+  },
+  {
+    id: 'pac-po-hung-vi',
+    title: 'Pác Bó hùng vĩ',
+    year: 1941,
+    type: 'tho',
+    typeLabel: 'Thơ',
+    summary:
+      'Bài thơ gắn với không gian Pác Bó, thể hiện tinh thần ung dung, niềm tin và khí thế cách mạng trong giai đoạn trở về Tổ quốc.',
+    focusPoints: [
+      'Nối với mốc 28/01/1941 và địa điểm Pác Bó trong hành trình cách mạng.',
+      'Có thể giới thiệu cảnh quan, hang Cốc Bó, suối Lê-nin, núi Các Mác như một trạm tham quan ảo.',
+      'Repo đã có file tac-pham-pac-po-hung-vi.md để phát triển tiếp.',
+    ],
+    sourceNote: 'Nên dùng trích đoạn ngắn, có nguồn và chú thích.',
+    hasContent: true,
+  },
+  {
+    id: 'doi-nguyet',
+    title: 'Đối nguyệt',
+    year: 1942,
+    type: 'tho',
+    typeLabel: 'Thơ',
+    summary:
+      'Một bài thơ trong mạch Nhật ký trong tù, gợi vẻ đẹp tâm hồn, phong thái bình thản và chất thơ của Hồ Chí Minh trong hoàn cảnh thử thách.',
+    focusPoints: [
+      'Phù hợp cho phần văn học: chất thép trong cảnh lao tù và chất tình trước thiên nhiên.',
+      'Có thể kết hợp phần đọc thơ, cảm nhận ngắn và câu hỏi suy ngẫm.',
+      'Repo đã có file tac-pham-doi-nguyet.md.',
+    ],
+    sourceNote: 'Không nên chép toàn văn dài nếu chưa kiểm tra bản quyền/nguồn.',
+    hasContent: true,
+  },
+  {
+    id: 'pari',
+    title: 'Pari',
+    year: 1922,
+    type: 'tho',
+    typeLabel: 'Thơ',
+    summary:
+      'Tác phẩm gắn với thời kỳ hoạt động ở Pháp, có thể dùng để mở rộng góc nhìn về Nguyễn Ái Quốc trong đời sống chính trị, báo chí và văn hóa tại Paris.',
+    focusPoints: [
+      'Kết nối với mốc hoạt động ở Pháp, báo Le Paria và Hội Liên hiệp các dân tộc thuộc địa.',
+      'Có thể làm một thẻ “Paris trong hành trình tìm đường cứu nước”.',
+      'Repo đã có file tac-pham-pari.md.',
+    ],
+    sourceNote: 'Cần kiểm chứng năm và văn bản khi xuất bản trang chi tiết.',
     hasContent: true,
   },
 ];
@@ -238,44 +407,113 @@ const works: Work[] = [
 const songs: Song[] = [
   {
     order: 1,
-    title: 'Ai yêu Bác Hồ Chí Minh hơn thiếu niên nhi đồng',
-    creator: 'Phong Nhã',
-    performer: 'Thiếu nhi, hợp xướng',
+    title: 'Mùa xuân trên Thành phố Hồ Chí Minh',
+    creator: 'Xuân Hồng',
+    performer: 'Tùng Dương',
+    context:
+      'Ca khúc thường được dùng trong không khí mừng xuân, mừng đất nước thống nhất và niềm tự hào về thành phố mang tên Bác.',
+    theme: 'Thành phố mang tên Bác',
     audioStatus: 'placeholder',
   },
   {
     order: 2,
-    title: 'Ca ngợi Hồ Chủ tịch',
-    creator: 'Văn Cao',
-    performer: 'Hợp xướng',
+    title: 'Ai yêu Bác Hồ Chí Minh hơn thiếu niên nhi đồng',
+    creator: 'Phong Nhã',
+    performer: 'Pia Linh hoặc thiếu nhi, hợp xướng',
+    context:
+      'Bài hát gần gũi với thiếu nhi, phù hợp làm điểm mở đầu cho khu vực âm nhạc và giáo dục tình cảm kính yêu Bác.',
+    theme: 'Thiếu nhi',
     audioStatus: 'placeholder',
   },
   {
     order: 3,
-    title: 'Hồ Chí Minh đẹp nhất tên Người',
-    creator: 'Trần Kiết Tường',
-    performer: 'Nhiều nghệ sĩ',
+    title: 'Tuổi trẻ thế hệ Bác Hồ',
+    creator: 'Triều Dâng',
+    performer: 'Tùng Dương',
+    context:
+      'Gợi tinh thần thanh niên sống có lý tưởng, học tập, rèn luyện và tiếp nối con đường mà Bác Hồ đã lựa chọn.',
+    theme: 'Thanh niên',
     audioStatus: 'placeholder',
   },
   {
     order: 4,
-    title: 'Bác Hồ một tình yêu bao la',
-    creator: 'Thuận Yến',
-    performer: 'Nhiều nghệ sĩ',
+    title: 'Như có Bác Hồ trong ngày vui đại thắng',
+    creator: 'Phạm Tuyên',
+    performer: 'Tốp ca Nhạc viện TP.HCM',
+    context:
+      'Ca khúc gắn với niềm vui chiến thắng, thống nhất đất nước; rất phù hợp cho mốc 1975 trong timeline.',
+    theme: 'Đại thắng mùa xuân',
     audioStatus: 'placeholder',
   },
   {
     order: 5,
-    title: 'Người là niềm tin tất thắng',
-    creator: 'Chu Minh',
-    performer: 'Nhiều nghệ sĩ',
+    title: 'Bác đang cùng chúng cháu hành quân',
+    creator: 'Huy Thục',
+    performer: 'Tốp ca nam Trường Đại học Văn hóa Nghệ thuật Quân đội',
+    context:
+      'Bài hát thể hiện hình ảnh Bác như nguồn động viên tinh thần trên mỗi chặng đường chiến đấu và xây dựng.',
+    theme: 'Người lính',
     audioStatus: 'placeholder',
   },
   {
     order: 6,
+    title: 'Ca ngợi Hồ Chủ tịch',
+    creator: 'Văn Cao',
+    performer: 'NSND Quốc Hưng hoặc hợp xướng',
+    context:
+      'Một ca khúc trang trọng, phù hợp đặt trong phần mở đầu hoặc phần nghi thức của không gian văn hóa.',
+    theme: 'Ca ngợi lãnh tụ',
+    audioStatus: 'placeholder',
+  },
+  {
+    order: 7,
+    title: 'Viếng lăng Bác',
+    creator: 'Hoàng Hiệp',
+    performer: 'NSND Quốc Hưng',
+    poemBy: 'Viễn Phương',
+    context:
+      'Bài hát phổ thơ Viễn Phương, có sắc thái trữ tình và thành kính, phù hợp cho phần cảm nhận, tưởng niệm.',
+    theme: 'Lăng Bác',
+    audioStatus: 'placeholder',
+  },
+  {
+    order: 8,
+    title: 'Đêm qua em mơ gặp Bác Hồ',
+    creator: 'Xuân Giao',
+    performer: 'Hoài Anh',
+    context:
+      'Ca khúc thiếu nhi giàu hình ảnh, có thể dùng trong hoạt động nghe nhạc - trả lời câu hỏi cho học sinh, sinh viên.',
+    theme: 'Thiếu nhi',
+    audioStatus: 'placeholder',
+  },
+  {
+    order: 9,
+    title: 'Miền Trung nhớ Bác',
+    creator: 'Phạm Minh Tuấn',
+    performer: 'Thu Hiền',
+    context:
+      'Gợi tình cảm của đồng bào miền Trung với Bác, có thể kết nối với quê hương Nghệ An và hành trình tuổi trẻ của Người.',
+    theme: 'Quê hương và tình cảm nhân dân',
+    audioStatus: 'placeholder',
+  },
+  {
+    order: 10,
     title: 'Dấu chân phía trước',
     creator: 'Phạm Minh Tuấn',
-    performer: 'Nhiều nghệ sĩ',
+    performer: 'Vũ Thắng Lợi',
+    context:
+      'Ca khúc phù hợp với chủ đề thanh niên tiếp bước, dấn thân và tự rèn luyện theo lý tưởng của Bác.',
+    theme: 'Lý tưởng thanh niên',
+    audioStatus: 'placeholder',
+  },
+  {
+    order: 11,
+    title: 'Minigame Đố vui nhớ Bác',
+    creator: 'Hoạt động tương tác',
+    performer: 'Người xem tham gia',
+    context:
+      'Có thể dùng 5-7 câu hỏi ngắn sau phần nghe nhạc: đoán tên bài, tác giả, chủ đề và mốc lịch sử liên quan.',
+    theme: 'Tương tác',
     audioStatus: 'placeholder',
   },
 ];
@@ -288,7 +526,9 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Âu',
     city: 'Moscow',
     imagePath: '/assets/images/monuments/russia-moscow.jpg',
-    note: 'Gợi ý tư liệu về tượng đài/công trình tưởng niệm Hồ Chí Minh tại Nga. Cần bổ sung ảnh và kiểm chứng thông tin chi tiết.',
+    note: 'Không gian tưởng niệm tại Nga cho thấy dấu ấn của Hồ Chí Minh trong quan hệ hữu nghị Việt Nam - Liên Xô trước đây và Việt Nam - Nga ngày nay.',
+    culturalNote:
+      'Có thể triển khai thành thẻ “tình hữu nghị quốc tế” gắn với thời gian Người học tập, hoạt động tại Liên Xô.',
   },
   {
     id: 'france-montreuil',
@@ -297,7 +537,9 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Âu',
     city: 'Montreuil',
     imagePath: '/assets/images/monuments/france-montreuil.jpg',
-    note: 'Gắn với không gian tưởng niệm Chủ tịch Hồ Chí Minh tại Montreuil. Cần bổ sung nguồn hình ảnh được phép sử dụng.',
+    note: 'Pháp là nơi Nguyễn Ái Quốc hoạt động chính trị, viết báo và đưa tiếng nói của nhân dân Việt Nam ra quốc tế.',
+    culturalNote:
+      'Nên liên kết với mốc 1919, báo Người cùng khổ và Hội Liên hiệp các dân tộc thuộc địa.',
   },
   {
     id: 'cuba-havana',
@@ -307,6 +549,8 @@ const monuments: Monument[] = [
     city: 'La Habana',
     imagePath: '/assets/images/monuments/cuba-havana.jpg',
     note: 'Phù hợp để giới thiệu tình hữu nghị Việt Nam - Cuba và sự kính trọng quốc tế dành cho Chủ tịch Hồ Chí Minh.',
+    culturalNote:
+      'Có thể trình bày cùng các câu chuyện đoàn kết quốc tế, tinh thần độc lập dân tộc và chủ nghĩa nhân văn.',
   },
   {
     id: 'mexico-mexico-city',
@@ -315,7 +559,9 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Mỹ',
     city: 'Mexico City',
     imagePath: '/assets/images/monuments/mexico-mexico-city.jpg',
-    note: 'Gợi ý mục bản đồ di sản quốc tế. Cần kiểm chứng tên địa điểm và năm khánh thành trước khi xuất bản.',
+    note: 'Mexico là một điểm trong mạng lưới không gian tưởng niệm Hồ Chí Minh tại Mỹ Latinh, phản ánh sự đồng cảm với các dân tộc đấu tranh vì độc lập.',
+    culturalNote:
+      'Khi có ảnh thật, nên bổ sung tên công viên hoặc quảng trường để người xem tra cứu tiếp.',
   },
   {
     id: 'india-kolkata',
@@ -325,6 +571,8 @@ const monuments: Monument[] = [
     city: 'Kolkata',
     imagePath: '/assets/images/monuments/india-kolkata.jpg',
     note: 'Có thể dùng để mở rộng chủ đề Chủ tịch Hồ Chí Minh trong tình đoàn kết Á - Phi.',
+    culturalNote:
+      'Phù hợp đặt trong nhóm nội dung về phong trào giải phóng dân tộc và tình hữu nghị châu Á.',
   },
   {
     id: 'madagascar-antananarivo',
@@ -333,66 +581,216 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Phi',
     city: 'Antananarivo',
     imagePath: '/assets/images/monuments/madagascar-antananarivo.jpg',
-    note: 'Gợi ý tư liệu về sự lan tỏa hình ảnh Hồ Chí Minh tại châu Phi. Cần bổ sung nguồn kiểm chứng.',
+    note: 'Sự hiện diện của tên tuổi Hồ Chí Minh tại châu Phi gợi mở chủ đề về ảnh hưởng của cách mạng Việt Nam đối với các dân tộc bị áp bức.',
+    culturalNote:
+      'Nên dùng thẻ này để giải thích vì sao Hồ Chí Minh được nhìn nhận như biểu tượng của giải phóng dân tộc.',
+  },
+  {
+    id: 'thailand',
+    country: 'Thái Lan',
+    region: 'chau-a',
+    regionLabel: 'Châu Á',
+    imagePath: '/assets/images/monuments/thailand.jpg',
+    note: 'Thái Lan gắn với thời gian Nguyễn Ái Quốc hoạt động trong cộng đồng Việt kiều, xây dựng cơ sở cách mạng và vận động quần chúng.',
+    culturalNote:
+      'Có thể phát triển thành một điểm trên bản đồ hành trình cứu nước ở Đông Nam Á.',
+  },
+  {
+    id: 'china',
+    country: 'Trung Quốc',
+    region: 'chau-a',
+    regionLabel: 'Châu Á',
+    imagePath: '/assets/images/monuments/china.jpg',
+    note: 'Trung Quốc là địa bàn quan trọng trong quá trình đào tạo cán bộ, thành lập tổ chức cách mạng và hoạt động trước năm 1945.',
+    culturalNote:
+      'Nên liên kết với Quảng Châu, Hội Việt Nam Cách mạng Thanh niên và mốc thành lập Đảng.',
+  },
+  {
+    id: 'japan',
+    country: 'Nhật Bản',
+    region: 'chau-a',
+    regionLabel: 'Châu Á',
+    imagePath: '/assets/images/monuments/japan.jpg',
+    note: 'Nhật Bản có thể được đưa vào nhóm không gian tưởng niệm tại châu Á, giúp mở rộng bản đồ di sản quốc tế.',
+    culturalNote:
+      'Khi bổ sung dữ liệu thật, nên ghi rõ địa phương, loại công trình và năm đặt tượng/kỷ niệm.',
+  },
+  {
+    id: 'sri-lanka',
+    country: 'Sri Lanka',
+    region: 'chau-a',
+    regionLabel: 'Châu Á',
+    imagePath: '/assets/images/monuments/sri-lanka.jpg',
+    note: 'Sri Lanka giúp hoàn thiện góc nhìn về sự lan tỏa hình ảnh Hồ Chí Minh trong khu vực Nam Á.',
+    culturalNote:
+      'Có thể đặt cạnh Ấn Độ trong cụm nội dung “tình hữu nghị châu Á”.',
+  },
+  {
+    id: 'hungary',
+    country: 'Hungary',
+    region: 'chau-au',
+    regionLabel: 'Châu Âu',
+    imagePath: '/assets/images/monuments/hungary.jpg',
+    note: 'Hungary là một điểm tham khảo trong hệ thống không gian tưởng niệm Hồ Chí Minh tại châu Âu.',
+    culturalNote:
+      'Nên dùng để cho thấy sự trân trọng của bạn bè quốc tế đối với Việt Nam và Chủ tịch Hồ Chí Minh.',
+  },
+  {
+    id: 'slovakia',
+    country: 'Slovakia',
+    region: 'chau-au',
+    regionLabel: 'Châu Âu',
+    imagePath: '/assets/images/monuments/slovakia.jpg',
+    note: 'Slovakia có thể được trình bày trong cụm các quốc gia châu Âu có công trình hoặc địa điểm mang dấu ấn Hồ Chí Minh.',
+    culturalNote:
+      'Khi có dữ liệu ảnh, nên bổ sung chú thích ngắn về vị trí và ý nghĩa ngoại giao văn hóa.',
+  },
+  {
+    id: 'uk',
+    country: 'Anh',
+    region: 'chau-au',
+    regionLabel: 'Châu Âu',
+    imagePath: '/assets/images/monuments/uk.jpg',
+    note: 'Anh gắn với một chặng trong hành trình lao động và tìm hiểu thế giới của Nguyễn Tất Thành trước khi trở lại Pháp.',
+    culturalNote:
+      'Có thể liên kết với chủ đề tự học, lao động và quan sát đời sống công nhân quốc tế.',
+  },
+  {
+    id: 'argentina',
+    country: 'Argentina',
+    region: 'chau-my',
+    regionLabel: 'Châu Mỹ',
+    imagePath: '/assets/images/monuments/argentina.jpg',
+    note: 'Argentina mở rộng bản đồ di sản Hồ Chí Minh tại khu vực Mỹ Latinh, nơi các giá trị độc lập dân tộc và công bằng xã hội có sức cộng hưởng lớn.',
+    culturalNote:
+      'Nên đặt trong cụm “Mỹ Latinh với Hồ Chí Minh”.',
+  },
+  {
+    id: 'chile',
+    country: 'Chile',
+    region: 'chau-my',
+    regionLabel: 'Châu Mỹ',
+    imagePath: '/assets/images/monuments/chile.jpg',
+    note: 'Chile là một điểm giúp kể câu chuyện về sự lan tỏa của hình tượng Hồ Chí Minh trong phong trào tiến bộ quốc tế.',
+    culturalNote:
+      'Có thể dùng để mở câu chuyện về sự ủng hộ quốc tế dành cho Việt Nam.',
+  },
+  {
+    id: 'usa',
+    country: 'Hoa Kỳ',
+    region: 'chau-my',
+    regionLabel: 'Châu Mỹ',
+    imagePath: '/assets/images/monuments/usa.jpg',
+    note: 'Hoa Kỳ có thể được giới thiệu trong hành trình bôn ba tìm đường cứu nước, khi Người từng trải nghiệm đời sống lao động ở nhiều nơi trên thế giới.',
+    culturalNote:
+      'Nên viết thận trọng, tách rõ dữ liệu hành trình lịch sử và dữ liệu công trình tưởng niệm.',
+  },
+  {
+    id: 'algeria',
+    country: 'Algeria',
+    region: 'chau-phi',
+    regionLabel: 'Châu Phi',
+    imagePath: '/assets/images/monuments/algeria.jpg',
+    note: 'Algeria phù hợp với chủ đề đoàn kết giữa các dân tộc từng đấu tranh chống chủ nghĩa thực dân.',
+    culturalNote:
+      'Có thể liên hệ với tư tưởng giải phóng dân tộc và tinh thần quốc tế trong sáng.',
+  },
+  {
+    id: 'angola',
+    country: 'Angola',
+    region: 'chau-phi',
+    regionLabel: 'Châu Phi',
+    imagePath: '/assets/images/monuments/angola.jpg',
+    note: 'Angola giúp làm rõ ảnh hưởng biểu tượng của Hồ Chí Minh đối với các phong trào độc lập tại châu Phi.',
+    culturalNote:
+      'Nên bổ sung dữ liệu địa điểm cụ thể khi có nguồn ảnh/tài liệu.',
   },
 ];
 
 const stories: Story[] = [
   {
-    id: 'doi-dep-bac-ho',
-    title: 'Đôi dép giản dị',
+    id: 'bac-ho-va-nguoi-thay-thuoc',
+    title: 'Bác Hồ và những lời căn dặn đối với người thầy thuốc',
     summary:
-      'Câu chuyện gợi nhớ lối sống tiết kiệm, giản dị và gần gũi của Chủ tịch Hồ Chí Minh.',
-    topics: ['Giản dị', 'Tiết kiệm', 'Nêu gương'],
+      'Nhóm câu chuyện và lời căn dặn thể hiện tư tưởng coi người bệnh là trung tâm, đề cao y đức và trách nhiệm phục vụ nhân dân.',
+    topics: ['Y đức', 'Ngành y', 'Phục vụ nhân dân'],
     lesson:
-      'Giản dị không phải là thiếu thốn, mà là biết đặt giá trị thật lên trên hình thức.',
+      'Người thầy thuốc cần giỏi chuyên môn, giàu lòng nhân ái, biết đoàn kết và luôn đặt sức khỏe, tính mạng của người bệnh lên trên hết.',
     reflectionQuestion:
-      'Trong học tập và sinh hoạt Đoàn, mình có thể thực hành tiết kiệm bằng việc cụ thể nào?',
+      'Nếu học hoặc làm trong ngành chăm sóc con người, bạn sẽ biến tinh thần “lương y như từ mẫu” thành hành động cụ thể nào?',
     fullContent:
-      'Không gian này nên kể câu chuyện bằng văn phong ngắn, có nguồn rõ ràng, kèm ảnh minh họa đôi dép hoặc hiện vật liên quan. Nội dung chính cần nhấn mạnh sự nhất quán giữa lời nói và lối sống của Người.',
+      'Phần này có thể triển khai như một trạm đọc ngắn về tư tưởng Hồ Chí Minh đối với y tế: tận tâm với người bệnh, rèn luyện đạo đức nghề nghiệp, chống thái độ vô cảm, xây dựng tinh thần đoàn kết trong tập thể y bác sĩ. Nội dung phù hợp với nhóm câu hỏi về giáo dục, y đức và trách nhiệm xã hội.',
   },
   {
-    id: 'chiec-dong-ho',
-    title: 'Chiếc đồng hồ',
+    id: 'phai-cham-chi-hoc-tap',
+    title: 'Phải chăm chỉ học tập',
     summary:
-      'Một câu chuyện thường được dùng để nói về tinh thần đoàn kết, kỷ luật và vai trò của từng cá nhân trong tập thể.',
-    topics: ['Đoàn kết', 'Kỷ luật', 'Trách nhiệm'],
+      'Câu chuyện nhấn mạnh việc học để hiểu biết, để làm việc tốt hơn và để phục vụ nhân dân, không học hình thức hay đối phó.',
+    topics: ['Học tập', 'Tự rèn luyện', 'Phục vụ'],
     lesson:
-      'Tập thể vận hành tốt khi mỗi người làm đúng phần việc của mình và tôn trọng phần việc của người khác.',
+      'Học tập là nhiệm vụ lâu dài. Cán bộ, đoàn viên, sinh viên càng muốn phụng sự tốt càng phải tự học, tự sửa mình và không giấu dốt.',
     reflectionQuestion:
-      'Nếu ví lớp học hoặc chi đoàn như một chiếc đồng hồ, vị trí của bạn đang đóng góp ra sao?',
+      'Bạn đang học điều gì không phải để lấy điểm, mà để làm việc tốt hơn cho tập thể?',
     fullContent:
-      'Khi triển khai chính thức, nên bổ sung bản kể đã được kiểm chứng từ nguồn chính thống. Có thể thiết kế dạng “bài học 1 phút” để người xem đọc nhanh và tự trả lời câu hỏi.',
+      'Nên trình bày câu chuyện theo dạng “bài học 1 phút”: mở bằng một tình huống gần gũi trong học tập, tiếp đến là lời nhắc về tinh thần chăm chỉ, cuối cùng là câu hỏi tự đánh giá. Phần này rất hợp để đặt cạnh khu vực quiz và chủ đề học tập suốt đời.',
   },
   {
-    id: 'bac-ho-voi-thieu-nhi',
-    title: 'Bác Hồ với thiếu nhi',
+    id: 'thoi-gian-quy-bau-lam',
+    title: 'Thời gian quý báu lắm',
     summary:
-      'Nhóm câu chuyện thể hiện tình cảm của Bác dành cho thiếu niên, nhi đồng và niềm tin vào thế hệ tương lai.',
-    topics: ['Thiếu nhi', 'Giáo dục', 'Tình thương'],
+      'Câu chuyện gợi bài học về đúng giờ, giữ lời hẹn, tôn trọng thời gian của tập thể và rèn luyện kỷ luật cá nhân.',
+    topics: ['Kỷ luật', 'Đúng giờ', 'Tôn trọng tập thể'],
     lesson:
-      'Yêu thương thế hệ trẻ cần đi cùng trách nhiệm giáo dục, khích lệ và tạo điều kiện để các em trưởng thành.',
+      'Tôn trọng thời gian là tôn trọng con người. Một tập thể làm việc tốt bắt đầu từ thói quen chuẩn bị đúng giờ, đúng việc.',
     reflectionQuestion:
-      'Đoàn Thanh niên của trường có thể làm gì để lan tỏa tinh thần chăm lo thế hệ trẻ?',
+      'Trong sinh hoạt lớp, họp nhóm hoặc hoạt động Đoàn, bạn có thể thay đổi thói quen nào để không làm mất thời gian của người khác?',
     fullContent:
-      'Có thể xây thành cụm thẻ nhỏ gồm thư gửi thiếu nhi, ảnh tư liệu và các hoạt động thiếu nhi học tập theo 5 điều Bác Hồ dạy.',
+      'Có thể biến câu chuyện này thành một thẻ cam kết nhỏ: đúng giờ trong học tập, đúng hẹn trong công việc, chuẩn bị trước khi tham gia hoạt động chung. Đây là nội dung dễ liên hệ với tác phong chuyên nghiệp của sinh viên và đoàn viên.',
   },
   {
-    id: 'gan-dan-hieu-dan',
-    title: 'Gần dân, hiểu dân, vì dân',
+    id: 'doi-ban-tay',
+    title: 'Đôi bàn tay',
     summary:
-      'Cụm nội dung về phong cách làm việc sâu sát, lắng nghe và tôn trọng nhân dân.',
-    topics: ['Gần dân', 'Dân vận', 'Phục vụ'],
+      'Câu chuyện gợi tinh thần tự lực, dám nghĩ, dám đi, dám làm của người thanh niên Nguyễn Tất Thành trên hành trình tìm đường cứu nước.',
+    topics: ['Tự lực', 'Ý chí', 'Lao động'],
     lesson:
-      'Muốn phục vụ cộng đồng hiệu quả thì phải bắt đầu từ việc lắng nghe nhu cầu thật của cộng đồng.',
+      'Hoài bão lớn cần bắt đầu bằng hành động cụ thể. Đôi bàn tay lao động tượng trưng cho ý chí tự thân và niềm tin vào con đường mình chọn.',
     reflectionQuestion:
-      'Một hoạt động tình nguyện sẽ tốt hơn thế nào nếu bắt đầu bằng khảo sát nhu cầu thực tế?',
+      'Nếu phải bắt đầu một việc lớn bằng nguồn lực rất nhỏ, “đôi bàn tay” của bạn hôm nay là kỹ năng hay phẩm chất nào?',
     fullContent:
-      'Phần này có thể liên kết với tác phẩm “Dân vận” và các hoạt động tình nguyện của Đoàn trường để tạo cầu nối giữa lịch sử và hành động hôm nay.',
+      'Nội dung nên liên kết trực tiếp với mốc 05/06/1911 tại Bến Nhà Rồng. Thay vì chỉ kể lại sự kiện, trang có thể đặt câu hỏi về bản lĩnh tuổi trẻ: khi chưa có đủ điều kiện, người trẻ vẫn có thể bắt đầu bằng lao động, tự học và ý chí đi đến cùng với mục tiêu đúng đắn.',
+  },
+  {
+    id: 'bac-ho-voi-tinh-than-tu-hoc',
+    title: 'Bác Hồ với tinh thần tự học',
+    summary:
+      'Câu chuyện nhấn mạnh năng lực tự học ngoại ngữ, viết báo, quan sát đời sống và học trong mọi hoàn cảnh của Chủ tịch Hồ Chí Minh.',
+    topics: ['Tự học', 'Ngoại ngữ', 'Học suốt đời'],
+    lesson:
+      'Tự học là con đường phát triển bền vững. Khi biết học từ sách, từ lao động, từ nhân dân và từ thực tiễn, mỗi người sẽ lớn lên liên tục.',
+    reflectionQuestion:
+      'Bạn có thể thiết kế một kế hoạch tự học 30 ngày nào để nâng năng lực thật của mình?',
+    fullContent:
+      'Phần này có thể phát triển thành một “góc tự học”: gợi ý sổ tay tự học, mục tiêu nhỏ mỗi ngày, cách ghi chép điều quan sát được và cách biến tri thức thành hành động. Đây là cầu nối tốt giữa tư tưởng giáo dục của Bác và đời sống sinh viên hiện nay.',
   },
 ];
 
 const sourceItems = [
+  {
+    title: 'CTIM - Giới thiệu trường',
+    description:
+      'Nguồn bổ sung tên tiếng Anh College of Technology and Industrial Management, tên đầy đủ của trường, địa chỉ, cơ sở vật chất và định hướng đào tạo của Cao đẳng CTIM.',
+  },
+  {
+    title: 'CTIM - Đảng, Đoàn thể',
+    description:
+      'Nguồn bổ sung cơ cấu Chi bộ, Công đoàn, Đoàn Thanh niên và các hoạt động Đoàn - phong trào thanh niên đang được CTIM công bố.',
+  },
+  {
+    title: 'CTIM - Chức năng, nhiệm vụ Đoàn trường',
+    description:
+      'Nguồn bổ sung vai trò Đoàn Thanh niên CTIM trong tập hợp, đoàn kết, giáo dục đoàn viên, sinh viên và tổ chức phong trào học tập, rèn luyện, tình nguyện.',
+  },
   {
     title: 'Trang Không gian Văn hóa Hồ Chí Minh gốc trên Canva',
     description:
@@ -412,6 +810,58 @@ const sourceItems = [
     title: 'Bộ data đã lọc trong repository',
     description:
       'Các file Markdown/JSON đã sắp xếp là nền nội dung để phát triển phiên bản chính thức.',
+  },
+];
+
+const roleModelActivities = [
+  {
+    title: 'Lễ tổng kết công tác Đoàn và phong trào thanh niên năm học 2024-2025',
+    year: '2024-2025',
+    description:
+      'Hoạt động tổng kết là chất liệu tốt để ghi nhận kết quả phong trào, tuyên dương tập thể/cá nhân tiêu biểu và rút ra bài học tổ chức hoạt động thanh niên.',
+    imagePath: '/assets/images/role-models/tong-ket-cong-tac-doan-2024-2025.jpg',
+  },
+  {
+    title: 'Tháng Thanh niên 2026 - Chủ nhật xanh',
+    year: '2026',
+    description:
+      'Có thể đặt trong nhóm hoạt động tình nguyện, môi trường, xây dựng nếp sống đẹp; liên hệ với tinh thần lao động, trách nhiệm cộng đồng và làm việc thiết thực.',
+    imagePath: '/assets/images/role-models/chu-nhat-xanh-2026.jpg',
+  },
+  {
+    title: 'Tháng Thanh niên 2026 - Hành trình về nguồn',
+    year: '2026',
+    description:
+      'Phù hợp với tinh thần của Không gian Văn hóa Hồ Chí Minh: đưa đoàn viên, sinh viên trở về với địa chỉ đỏ, lịch sử, truyền thống và bài học trách nhiệm hôm nay.',
+    imagePath: '/assets/images/role-models/hanh-trinh-ve-nguon-2026.jpg',
+  },
+  {
+    title: 'Chiến dịch Xuân tình nguyện 2026',
+    year: '2026',
+    description:
+      'Các hoạt động văn nghệ mừng Đảng - mừng Xuân, tổng kết chiến dịch và lan tỏa yêu thương có thể trở thành tư liệu sống cho phần “làm theo Bác”.',
+    imagePath: '/assets/images/role-models/xuan-tinh-nguyen-2026.jpg',
+  },
+  {
+    title: 'Ra mắt Ban Chấp hành Đoàn TNCS Hồ Chí Minh Trường Cao đẳng CTIM, nhiệm kỳ 2025 - 2027',
+    year: '2025-2027',
+    description:
+      'Nên dùng để giới thiệu lực lượng nòng cốt dẫn dắt phong trào thanh niên CTIM, đồng hành với đoàn viên trong học tập, rèn luyện và phát triển bản sắc sinh viên CTIM.',
+    imagePath: '/assets/images/role-models/bch-doan-ctim-2025-2027.jpg',
+  },
+  {
+    title: 'Lễ kết nạp Đảng viên mới',
+    year: 'Chi bộ',
+    description:
+      'Tư liệu Chi bộ về kết nạp đảng viên mới giúp kết nối công tác xây dựng Đảng với quá trình bồi dưỡng lý tưởng, rèn luyện bản lĩnh chính trị cho quần chúng ưu tú.',
+    imagePath: '/assets/images/role-models/ket-nap-dang-vien-moi.jpg',
+  },
+  {
+    title: 'CTIM dâng hương tưởng niệm Chủ tịch Hồ Chí Minh',
+    year: '19/05',
+    description:
+      'Hoạt động dâng hương nhân dịp kỷ niệm ngày sinh Chủ tịch Hồ Chí Minh là chất liệu trực tiếp cho không gian tưởng niệm, giáo dục truyền thống và tri ân.',
+    imagePath: '/assets/images/role-models/dang-huong-chu-tich-ho-chi-minh.jpg',
   },
 ];
 
@@ -440,7 +890,7 @@ const monumentTabs = [
 ];
 
 function getYearLabel(year?: number) {
-  return year ? String(year) : 'Cần bổ sung';
+  return year ? String(year) : 'Đang cập nhật';
 }
 
 export default function HomePage() {
@@ -515,6 +965,15 @@ export default function HomePage() {
               </p>
             </div>
 
+            <div className="mt-6 rounded-xl border border-gray-border bg-white/75 p-4 text-sm leading-7 text-gray-sub">
+              <p className="font-semibold text-ink">{ctimInfo.fullName}</p>
+              <p>
+                Tên tiếng Anh: {ctimInfo.englishName}. Địa chỉ:{' '}
+                {ctimInfo.address}.
+              </p>
+              <p className="mt-2">{ctimInfo.trainingGoal}</p>
+            </div>
+
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <button
                 onClick={() => scrollToSection('timeline')}
@@ -563,6 +1022,27 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white/80 py-12">
+        <div className="section-container">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {featuredAreas.map((area) => (
+              <button
+                key={area.sectionId}
+                onClick={() => scrollToSection(area.sectionId)}
+                className="rounded-xl border border-gray-border bg-ivory p-5 text-left transition hover:border-lotus-pink hover:shadow-sm"
+              >
+                <h2 className="font-heading text-xl font-bold text-ink">
+                  {area.title}
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-gray-sub">
+                  {area.description}
+                </p>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <SilkDivider />
 
       <section className="section-container py-16 md:py-20">
@@ -571,6 +1051,18 @@ export default function HomePage() {
           title="Hồ sơ Chủ tịch Hồ Chí Minh"
           subtitle="Phần tóm tắt nhanh để người xem nắm thông tin cốt lõi trước khi đi sâu vào từng không gian nội dung."
         />
+        <Card className="mb-6 p-6" hover={false}>
+          <p className="text-base leading-8 text-gray-sub">
+            Chủ tịch Hồ Chí Minh, tên khai sinh là Nguyễn Sinh Cung, thời
+            niên thiếu là Nguyễn Tất Thành, trong hoạt động cách mạng thường
+            được biết đến với tên Nguyễn Ái Quốc và về sau là Hồ Chí Minh.
+            Người sinh ngày 19/05/1890 tại làng Sen, xã Kim Liên, huyện Nam
+            Đàn, tỉnh Nghệ An. Cuộc đời và sự nghiệp của Người gắn với hành
+            trình tìm đường cứu nước, sáng lập và rèn luyện Đảng, lãnh đạo
+            nhân dân đấu tranh giành độc lập, xây dựng nhà nước mới và để lại
+            một di sản tư tưởng, đạo đức, phong cách có giá trị lâu dài.
+          </p>
+        </Card>
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="p-6">
             <Badge variant="green">Thông tin cơ bản</Badge>
@@ -832,10 +1324,21 @@ export default function HomePage() {
               <p className="mt-3 text-sm leading-7 text-gray-sub">
                 {work.summary}
               </p>
+              {work.focusPoints && (
+                <ul className="mt-4 space-y-2 text-xs leading-6 text-gray-sub">
+                  {work.focusPoints.map((point) => (
+                    <li key={point} className="flex gap-2">
+                      <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-lotus-pink" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <p className="mt-4 text-xs font-medium text-leaf-green">
-                {work.hasContent
-                  ? 'Đã có dữ liệu nền, nên bổ sung nguồn và bản trình bày.'
-                  : 'Cần bổ sung nội dung.'}
+                {work.sourceNote ??
+                  (work.hasContent
+                    ? 'Đã có dữ liệu nền để phát triển trang chi tiết.'
+                    : 'Đang chuẩn hóa nội dung.')}
               </p>
             </Card>
           ))}
@@ -861,13 +1364,28 @@ export default function HomePage() {
                 <p className="mt-3 text-sm text-gray-sub">
                   Sáng tác: <span className="text-ink">{song.creator}</span>
                 </p>
+                {song.poemBy && (
+                  <p className="mt-1 text-sm text-gray-sub">
+                    Thơ: <span className="text-ink">{song.poemBy}</span>
+                  </p>
+                )}
                 <p className="mt-1 text-sm text-gray-sub">
                   Trình bày gợi ý:{' '}
                   <span className="text-ink">{song.performer}</span>
                 </p>
+                {song.theme && (
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-lotus-pink">
+                    {song.theme}
+                  </p>
+                )}
+                {song.context && (
+                  <p className="mt-2 text-sm leading-7 text-gray-sub">
+                    {song.context}
+                  </p>
+                )}
                 <p className="mt-4 rounded-lg bg-lotus-light px-3 py-2 text-xs text-gray-sub">
-                  Cần bổ sung file audio/video hợp lệ trong thư mục
-                  /assets/audio.
+                  Khu vực media sẽ gắn audio/video hợp lệ trong thư mục
+                  /assets/audio khi có tài nguyên chính thức.
                 </p>
               </Card>
             ))}
@@ -910,6 +1428,11 @@ export default function HomePage() {
                 <p className="mt-3 text-sm leading-7 text-gray-sub">
                   {monument.note}
                 </p>
+                {monument.culturalNote && (
+                  <p className="mt-3 rounded-lg bg-lotus-light px-3 py-2 text-xs leading-6 text-gray-sub">
+                    {monument.culturalNote}
+                  </p>
+                )}
               </div>
             </Card>
           ))}
@@ -959,35 +1482,58 @@ export default function HomePage() {
         />
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="p-6">
-            <Badge variant="red">Đề xuất cấu trúc</Badge>
+            <Badge variant="red">Dữ liệu nền CTIM</Badge>
             <h3 className="mt-4 font-heading text-2xl font-bold">
-              Từ không gian tư liệu đến không gian hành động
+              Từ không gian tư liệu đến không gian hành động tại CTIM
             </h3>
+            <p className="mt-4 text-sm leading-7 text-gray-sub">
+              {ctimInfo.shortName} có hệ thống Đảng - Đoàn thể gồm Chi bộ,
+              Công đoàn và Đoàn Thanh niên. Trong đó, Đoàn Thanh niên giữ vai
+              trò tập hợp, đoàn kết, giáo dục đoàn viên, sinh viên; đồng thời
+              tổ chức các phong trào học tập, rèn luyện, tình nguyện và đồng
+              hành với thanh niên trong Nhà trường.
+            </p>
+            <ul className="mt-5 space-y-3 text-sm leading-7 text-gray-sub">
+              {ctimInfo.youthBodies.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-lotus-pink" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-5 rounded-xl bg-lotus-light p-4">
+              <h4 className="font-heading text-lg font-bold text-ink">
+                Gợi ý kết nối nội dung
+              </h4>
+              <ul className="mt-3 space-y-2 text-sm leading-7 text-gray-sub">
+                {ctimInfo.partyNotes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
             <ul className="mt-5 space-y-3 text-sm leading-7 text-gray-sub">
               <li>Hoạt động học tập chuyên đề của Chi bộ và Đoàn trường.</li>
               <li>Gương sinh viên, giảng viên, đoàn viên học tập và làm theo Bác.</li>
               <li>Sản phẩm truyền thông, bài viết, infographic, video ngắn.</li>
-              <li>Album ảnh theo năm học và theo chủ điểm tháng 5.</li>
+              <li>Album ảnh theo năm học, Tháng Thanh niên và chủ điểm tháng 5.</li>
             </ul>
           </Card>
           <div className="grid gap-5 md:grid-cols-2">
-            {[
-              'Sinh hoạt chuyên đề',
-              'Hoạt động Đoàn Thanh niên',
-              'Gương sáng học tập',
-              'Sản phẩm truyền thông',
-            ].map((title, index) => (
-              <Card key={title} className="overflow-hidden">
+            {roleModelActivities.map((activity) => (
+              <Card key={activity.title} className="overflow-hidden">
                 <ImagePlaceholder
-                  path={`/assets/images/role-models/hoat-dong-${index + 1}.jpg`}
-                  alt={`Ảnh minh họa: ${title}`}
+                  path={activity.imagePath}
+                  alt={`Ảnh hoạt động: ${activity.title}`}
                   aspectRatio="16/10"
                   className="rounded-none"
                 />
                 <div className="p-4">
-                  <h3 className="font-heading text-lg font-bold">{title}</h3>
+                  <Badge variant="gold">{activity.year}</Badge>
+                  <h3 className="mt-3 font-heading text-lg font-bold">
+                    {activity.title}
+                  </h3>
                   <p className="mt-2 text-sm text-gray-sub">
-                    Cần bổ sung dữ liệu thật từ đơn vị trước ngày xuất bản.
+                    {activity.description}
                   </p>
                 </div>
               </Card>
