@@ -1063,6 +1063,23 @@ export default function HomePage() {
             một di sản tư tưởng, đạo đức, phong cách có giá trị lâu dài.
           </p>
         </Card>
+        <div className="mb-6 grid gap-4 md:grid-cols-3">
+          <ImagePlaceholder
+            path="/assets/images/profile/lang-sen-kim-lien.jpg"
+            alt="Ảnh Làng Sen, Kim Liên, Nam Đàn, Nghệ An"
+            aspectRatio="16/10"
+          />
+          <ImagePlaceholder
+            path="/assets/images/profile/nguyen-tat-thanh-thoi-tre.jpg"
+            alt="Ảnh tư liệu Nguyễn Tất Thành thời trẻ hoặc thời dạy học"
+            aspectRatio="16/10"
+          />
+          <ImagePlaceholder
+            path="/assets/images/profile/ho-chi-minh-chan-dung-chinh-thuc.jpg"
+            alt="Ảnh chân dung Chủ tịch Hồ Chí Minh dùng trong phần hồ sơ"
+            aspectRatio="16/10"
+          />
+        </div>
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="p-6">
             <Badge variant="green">Thông tin cơ bản</Badge>
@@ -1270,6 +1287,12 @@ export default function HomePage() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {thoughtTopics.map((topic) => (
               <Card key={topic.id} className="p-5">
+                <ImagePlaceholder
+                  path={`/assets/images/thought/${topic.id}.jpg`}
+                  alt={`Ảnh minh họa chủ đề: ${topic.title}`}
+                  aspectRatio="4/3"
+                  className="mb-4 rounded-lg"
+                />
                 <p className="font-heading text-3xl font-bold text-lotus-pink/60">
                   {topic.icon}
                 </p>
@@ -1368,6 +1391,12 @@ export default function HomePage() {
         <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {filteredWorks.map((work) => (
             <Card key={work.id} className="p-5">
+              <ImagePlaceholder
+                path={`/assets/images/works/${work.id}.jpg`}
+                alt={`Ảnh bìa hoặc tư liệu cho tác phẩm: ${work.title}`}
+                aspectRatio="16/10"
+                className="-mx-5 -mt-5 mb-5 rounded-b-none"
+              />
               <div className="flex items-center justify-between gap-3">
                 <Badge variant={work.type === 'van-kien' ? 'red' : 'pink'}>
                   {work.typeLabel}
@@ -1413,6 +1442,12 @@ export default function HomePage() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {songs.map((song) => (
               <Card key={song.order} className="p-5">
+                <ImagePlaceholder
+                  path={`/assets/images/music/ca-khuc-${String(song.order).padStart(2, '0')}.jpg`}
+                  alt={`Ảnh minh họa hoặc thumbnail ca khúc: ${song.title}`}
+                  aspectRatio="16/10"
+                  className="-mx-5 -mt-5 mb-5 rounded-b-none"
+                />
                 <p className="font-heading text-3xl font-bold text-lotus-pink/50">
                   {String(song.order).padStart(2, '0')}
                 </p>
@@ -1507,6 +1542,12 @@ export default function HomePage() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {stories.map((story) => (
               <Card key={story.id} className="p-5">
+                <ImagePlaceholder
+                  path={`/assets/images/stories/${story.id}.jpg`}
+                  alt={`Ảnh minh họa câu chuyện: ${story.title}`}
+                  aspectRatio="16/10"
+                  className="-mx-5 -mt-5 mb-5 rounded-b-none"
+                />
                 <h3 className="font-heading text-xl font-bold">
                   {story.title}
                 </h3>
@@ -1551,6 +1592,12 @@ export default function HomePage() {
               tổ chức các phong trào học tập, rèn luyện, tình nguyện và đồng
               hành với thanh niên trong Nhà trường.
             </p>
+            <ImagePlaceholder
+              path="/assets/images/ctim/khuon-vien-ctim-tran-van-tra.jpg"
+              alt="Ảnh khuôn viên Trường Cao đẳng CTIM tại đường Trần Văn Trà"
+              aspectRatio="16/10"
+              className="mt-5"
+            />
             <ul className="mt-5 space-y-3 text-sm leading-7 text-gray-sub">
               {ctimInfo.youthBodies.map((item) => (
                 <li key={item} className="flex gap-3">
