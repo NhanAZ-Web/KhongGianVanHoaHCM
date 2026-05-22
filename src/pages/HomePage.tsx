@@ -1132,42 +1132,100 @@ export default function HomePage() {
             title="Dòng thời gian cuộc đời và sự nghiệp"
             subtitle="Các mốc chính được chia theo giai đoạn để dễ học, dễ kể chuyện và dễ mở rộng thành bản đồ tương tác."
           />
-          <FilterTabs
-            tabs={timelineTabs}
-            activeTab={timelineFilter}
-            onTabChange={setTimelineFilter}
-          />
-          <div className="mt-8 grid gap-6">
-            {filteredTimeline.map((period) => (
-              <Card key={period.periodId} className="p-6">
-                <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-                  <h3 className="font-heading text-xl font-bold">
-                    {period.periodTitle}
-                  </h3>
-                  <Badge variant="pink">{period.periodId}</Badge>
-                </div>
-                <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  {period.events.map((event) => (
-                    <div
-                      key={`${period.periodId}-${event.date}-${event.title}`}
-                      className="rounded-lg border border-gray-border bg-ivory p-4"
-                    >
-                      <p className="font-heading text-sm font-bold text-lotus-pink">
-                        {event.date}
-                      </p>
-                      <p className="mt-2 text-sm leading-7 text-ink">
-                        {event.title}
-                      </p>
-                      {event.summary && (
-                        <p className="mt-2 text-xs leading-6 text-gray-sub">
-                          {event.summary}
-                        </p>
-                      )}
+          <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
+            <div className="order-2 space-y-14 lg:order-1">
+              {filteredTimeline.map((period) => (
+                <section key={period.periodId}>
+                  <div className="mb-8 flex items-center gap-4">
+                    <span className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-lotus-pink/35 to-lotus-pink/15 md:block" />
+                    <div className="rounded-full border border-lotus-pink/30 bg-ivory px-5 py-2 text-center shadow-sm">
+                      <Badge variant="pink">{period.periodId}</Badge>
+                      <h3 className="mt-1 font-heading text-lg font-bold md:text-xl">
+                        {period.periodTitle}
+                      </h3>
                     </div>
-                  ))}
+                    <span className="hidden h-px flex-1 bg-gradient-to-l from-transparent via-lotus-pink/35 to-lotus-pink/15 md:block" />
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute bottom-0 left-5 top-0 w-px bg-gradient-to-b from-lotus-pink/15 via-lotus-pink/45 to-lotus-pink/15 md:left-1/2 md:-translate-x-1/2" />
+                    <div className="space-y-6 md:space-y-8">
+                      {period.events.map((event, eventIndex) => {
+                        const isLeft = eventIndex % 2 === 0;
+
+                        return (
+                          <article
+                            key={`${period.periodId}-${event.date}-${event.title}`}
+                            className="relative md:grid md:grid-cols-[minmax(0,1fr)_3rem_minmax(0,1fr)] md:gap-4"
+                          >
+                            <div className="absolute left-5 top-5 z-10 -translate-x-1/2 md:left-1/2">
+                              <span className="flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-lotus-pink font-heading text-xs font-bold text-white shadow-md">
+                                {String(eventIndex + 1).padStart(2, '0')}
+                              </span>
+                            </div>
+
+                            <Card
+                              className={`ml-12 p-5 md:ml-0 ${
+                                isLeft
+                                  ? 'md:col-start-1 md:text-right'
+                                  : 'md:col-start-3'
+                              }`}
+                            >
+                              <div
+                                className={`flex flex-col gap-2 ${
+                                  isLeft
+                                    ? 'md:items-end'
+                                    : 'md:items-start'
+                                }`}
+                              >
+                                <span className="inline-flex w-fit rounded-full bg-lotus-pale px-3 py-1 font-heading text-xs font-bold text-lotus-pink">
+                                  {event.date}
+                                </span>
+                                <h4 className="font-heading text-lg font-bold leading-snug text-ink">
+                                  {event.title}
+                                </h4>
+                              </div>
+                              {event.summary && (
+                                <p className="mt-3 text-sm leading-7 text-gray-sub">
+                                  {event.summary}
+                                </p>
+                              )}
+                            </Card>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </section>
+              ))}
+            </div>
+
+            <aside className="sticky top-20 z-20 order-1 self-start lg:top-28 lg:order-2">
+              <Card className="border-lotus-pink/20 bg-ivory/95 p-3 shadow-md backdrop-blur" hover={false}>
+                <p className="px-2 pb-2 font-heading text-sm font-bold text-ink">
+                  Chọn giai đoạn
+                </p>
+                <div className="flex gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-visible lg:pb-0">
+                  {timelineTabs.map((tab) => {
+                    const isActive = tab.id === timelineFilter;
+
+                    return (
+                      <button
+                        key={tab.id}
+                        onClick={() => setTimelineFilter(tab.id)}
+                        className={`min-w-fit rounded-full px-4 py-2 text-left text-sm font-medium transition lg:w-full lg:rounded-lg ${
+                          isActive
+                            ? 'bg-lotus-pink text-white shadow-sm'
+                            : 'bg-white text-gray-sub hover:bg-lotus-pale hover:text-ink'
+                        }`}
+                      >
+                        {tab.label}
+                      </button>
+                    );
+                  })}
                 </div>
               </Card>
-            ))}
+            </aside>
           </div>
         </div>
       </section>
