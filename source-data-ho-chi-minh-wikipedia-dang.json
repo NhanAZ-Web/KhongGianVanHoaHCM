@@ -1,0 +1,142 @@
+{
+  "dataset_name": "ho-chi-minh-supplemental-source-data",
+  "captured_at": "2026-05-23 Asia/Saigon",
+  "sources": [
+    {
+      "id": "wikipedia-vi-ho-chi-minh",
+      "title": "Hồ Chí Minh - Wikipedia tiếng Việt",
+      "url": "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh",
+      "recommended_use": [
+        "broad table of contents",
+        "secondary topic discovery",
+        "works list",
+        "names and pseudonyms",
+        "legacy and popular culture"
+      ],
+      "caution": "Use official or primary sources to verify dates and politically sensitive details before publishing as authoritative content."
+    },
+    {
+      "id": "dang-tu-lieu-tieu-su",
+      "title": "Tiểu sử Chủ tịch Hồ Chí Minh",
+      "url": "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/tieu-su-cuoc-doi-va-su-nghiep/tieu-su-chu-tich-ho-chi-minh-52",
+      "published_at": "2018-04-30T09:09:00+07:00",
+      "recommended_use": [
+        "official biography spine",
+        "core timeline",
+        "education-oriented content",
+        "key revolutionary milestones"
+      ]
+    }
+  ],
+  "person": {
+    "id": "ho-chi-minh",
+    "primary_name": "Hồ Chí Minh",
+    "names": [
+      {"name": "Nguyễn Sinh Cung", "context": "tên lúc nhỏ"},
+      {"name": "Nguyễn Tất Thành", "context": "tên khi đi học và tuổi trẻ"},
+      {"name": "Văn Ba", "context": "tên dùng khi làm việc trên tàu năm 1911"},
+      {"name": "Nguyễn Ái Quốc", "context": "tên hoạt động cách mạng nổi bật ở Pháp và quốc tế"},
+      {"name": "Hồ Chí Minh", "context": "tên chính thức và phổ biến nhất về sau"},
+      {"name": "Trần Dân Tiên", "context": "bút danh/tên tác giả gắn với tác phẩm kể về đời hoạt động"},
+      {"name": "T. Lan", "context": "bút danh gắn với tác phẩm Vừa đi đường vừa kể chuyện"}
+    ],
+    "birth": {
+      "date": "1890-05-19",
+      "place": "Kim Liên, Nam Đàn, Nghệ An"
+    },
+    "death": {
+      "date": "1969-09-02",
+      "place": "Hà Nội"
+    },
+    "roles": [
+      "lãnh tụ cách mạng Việt Nam",
+      "người sáng lập Đảng Cộng sản Việt Nam",
+      "Chủ tịch nước Việt Nam Dân chủ Cộng hòa",
+      "Thủ tướng Chính phủ Việt Nam Dân chủ Cộng hòa giai đoạn đầu",
+      "nhà văn, nhà thơ, nhà báo",
+      "nhân vật của phong trào cộng sản quốc tế và phong trào giải phóng dân tộc"
+    ],
+    "legacy_titles": [
+      "Anh hùng giải phóng dân tộc",
+      "Nhà văn hóa kiệt xuất của Việt Nam"
+    ]
+  },
+  "timeline_events": [
+    {"date": "1890-05-19", "title": "Sinh tại Kim Liên, Nam Đàn, Nghệ An", "period": "Xuất thân", "source_ids": ["dang-tu-lieu-tieu-su", "wikipedia-vi-ho-chi-minh"]},
+    {"date": "1911-06-03", "title": "Nhận thẻ nhân viên trên tàu với tên Văn Ba", "period": "Ra đi tìm đường cứu nước", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1911-06-05", "title": "Rời cảng Nhà Rồng đến Pháp", "period": "Ra đi tìm đường cứu nước", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1912/1917", "title": "Đi qua nhiều nước ở châu Á, châu Âu, châu Mỹ, châu Phi", "period": "Hoạt động ở nước ngoài", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1917", "title": "Từ Anh trở lại Pháp, hoạt động trong phong trào Việt kiều và công nhân Pháp", "period": "Hoạt động ở Pháp", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1919", "title": "Gửi yêu sách tới Hội nghị Versailles với tên Nguyễn Ái Quốc", "period": "Hoạt động ở Pháp", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1920-12", "title": "Tham dự Đại hội XVIII Đảng Xã hội Pháp, tán thành gia nhập Quốc tế Cộng sản", "period": "Chuyển biến tư tưởng", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1921/1922", "title": "Tham gia Hội Liên hiệp các dân tộc thuộc địa và báo Người cùng khổ", "period": "Báo chí cách mạng", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1923-06", "title": "Sang Liên Xô làm việc tại Quốc tế Cộng sản", "period": "Hoạt động quốc tế", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1924-11", "title": "Đến Quảng Châu, Trung Quốc", "period": "Chuẩn bị tổ chức cách mạng", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1925", "title": "Thành lập Hội Việt Nam Cách mạng Thanh niên, mở lớp huấn luyện, ra báo Thanh niên", "period": "Chuẩn bị thành lập Đảng", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1928-07/1929-11", "title": "Hoạt động trong phong trào Việt kiều yêu nước ở Xiêm/Thái Lan", "period": "Chuẩn bị thành lập Đảng", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1930-02", "title": "Chủ trì Hội nghị thành lập Đảng Cộng sản Việt Nam tại Hồng Kông", "period": "Thành lập Đảng", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1931-06/1933", "title": "Bị bắt tại Hồng Kông và được trả tự do đầu năm 1933", "period": "Hoạt động quốc tế", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1941-01-28", "title": "Trở về Việt Nam sau hơn 30 năm xa Tổ quốc", "period": "Trở về nước", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1941-05", "title": "Triệu tập Hội nghị Trung ương 8, thành lập Việt Minh", "period": "Chuẩn bị Tổng khởi nghĩa", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1942-08/1943-09", "title": "Bị giam ở Quảng Tây, viết Nhật ký trong tù", "period": "Nhật ký trong tù", "source_ids": ["dang-tu-lieu-tieu-su", "wikipedia-vi-ho-chi-minh"]},
+    {"date": "1944-12", "title": "Chỉ thị thành lập Đội Việt Nam tuyên truyền giải phóng quân", "period": "Xây dựng lực lượng vũ trang", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1945-09-02", "title": "Đọc Tuyên ngôn độc lập tại Ba Đình, tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa", "period": "Khai sinh nhà nước mới", "source_ids": ["dang-tu-lieu-tieu-su", "wikipedia-vi-ho-chi-minh"]},
+    {"date": "1946-12-19", "title": "Kêu gọi toàn quốc kháng chiến chống thực dân Pháp", "period": "Kháng chiến chống Pháp", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1951", "title": "Được bầu làm Chủ tịch Ban Chấp hành Trung ương Đảng tại Đại hội II", "period": "Lãnh đạo kháng chiến", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1954-05-07", "title": "Kháng chiến chống Pháp kết thúc bằng chiến thắng Điện Biên Phủ", "period": "Kháng chiến chống Pháp", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1956-10", "title": "Được bầu làm Chủ tịch Đảng, kiêm Tổng Bí thư", "period": "Lãnh đạo miền Bắc và đấu tranh thống nhất", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1960", "title": "Đại hội III bầu lại làm Chủ tịch Ban Chấp hành Trung ương Đảng Lao động Việt Nam", "period": "Lãnh đạo miền Bắc và đấu tranh thống nhất", "source_ids": ["dang-tu-lieu-tieu-su"]},
+    {"date": "1969-09-02", "title": "Qua đời tại Hà Nội, để lại Di chúc", "period": "Cuối đời và di sản", "source_ids": ["dang-tu-lieu-tieu-su", "wikipedia-vi-ho-chi-minh"]},
+    {"date": "1987/1990", "title": "UNESCO thông qua nghị quyết tôn vinh nhân dịp kỷ niệm 100 năm ngày sinh", "period": "Di sản quốc tế", "source_ids": ["dang-tu-lieu-tieu-su", "wikipedia-vi-ho-chi-minh"]}
+  ],
+  "content_modules": [
+    {
+      "id": "journey-to-national-liberation",
+      "title": "Hành trình tìm đường cứu nước",
+      "items": ["Nhà Rồng 1911", "bốn châu 1912-1917", "Versailles 1919", "Pháp 1920-1922", "Liên Xô 1923", "Quảng Châu 1924-1927", "Thái Lan 1928-1929", "Hồng Kông 1930"]
+    },
+    {
+      "id": "return-and-august-revolution",
+      "title": "Trở về Tổ quốc và Cách mạng Tháng Tám",
+      "items": ["Pác Bó 1941", "Việt Minh", "Nhật ký trong tù", "Đội Việt Nam tuyên truyền giải phóng quân", "Tân Trào", "Tuyên ngôn độc lập"]
+    },
+    {
+      "id": "thought-and-ethics",
+      "title": "Tư tưởng và đạo đức Hồ Chí Minh",
+      "items": ["độc lập dân tộc", "đoàn kết quốc tế", "dân là gốc", "đạo đức cách mạng", "giáo dục và thanh niên", "đoàn kết toàn dân"]
+    },
+    {
+      "id": "works-and-journalism",
+      "title": "Tác phẩm và báo chí",
+      "items": ["Tuyên ngôn Độc lập", "Bản án chế độ thực dân Pháp", "Đường Kách mệnh", "Nhật ký trong tù", "Sửa đổi lối làm việc", "Di chúc", "Người cùng khổ", "Thanh niên"]
+    },
+    {
+      "id": "legacy-and-memory",
+      "title": "Di sản và tưởng niệm",
+      "items": ["Lăng Chủ tịch Hồ Chí Minh", "bảo tàng/khu di tích", "tượng đài", "địa danh mang tên Hồ Chí Minh", "tem và ảnh tư liệu", "UNESCO 1990"]
+    }
+  ],
+  "works": [
+    {"id": "tuyen-ngon-doc-lap", "title": "Tuyên ngôn Độc lập", "year": 1945, "type": "văn kiện"},
+    {"id": "ban-an-che-do-thuc-dan-phap", "title": "Bản án chế độ thực dân Pháp", "year": 1925, "type": "sách chính luận"},
+    {"id": "duong-kach-menh", "title": "Đường Kách mệnh", "year": 1927, "type": "lý luận cách mạng"},
+    {"id": "con-rong-tre", "title": "Con rồng tre", "year": 1922, "type": "kịch/châm biếm"},
+    {"id": "nhat-ky-trong-tu", "title": "Nhật ký trong tù", "year": 1942, "type": "thơ chữ Hán"},
+    {"id": "sua-doi-loi-lam-viec", "title": "Sửa đổi lối làm việc", "year": 1947, "type": "xây dựng Đảng"},
+    {"id": "nhung-mau-chuyen-ve-doi-hoat-dong", "title": "Những mẩu chuyện về đời hoạt động của Hồ Chủ tịch", "type": "hồi ký/tiểu sử", "author_name_used": "Trần Dân Tiên"},
+    {"id": "vua-di-duong-vua-ke-chuyen", "title": "Vừa đi đường vừa kể chuyện", "type": "kể chuyện", "author_name_used": "T. Lan"},
+    {"id": "di-chuc", "title": "Di chúc Hồ Chí Minh", "type": "văn kiện"}
+  ],
+  "web_app_recommendations": [
+    "Build a unified timeline from 1890 to 1990.",
+    "Add an interactive journey map from Nghệ An, Huế, Sài Gòn, France, Soviet Union, China, Cao Bằng, Tân Trào, Hà Nội.",
+    "Create card collections for works, names, places, and themes.",
+    "Keep official biography content separate from open encyclopedia/discussion content.",
+    "Add source attribution per card/event."
+  ],
+  "verification_notes": [
+    "Prioritize the Tư liệu Văn kiện Đảng page for core biography and official timeline.",
+    "Use Wikipedia for topic discovery and cross-linking, then verify before publishing.",
+    "Check copyright and media licenses for images, audio, scanned documents, and lyrics."
+  ]
+}

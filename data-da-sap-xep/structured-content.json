@@ -1,0 +1,339 @@
+{
+  "project": {
+    "id": "khong-gian-van-hoa-ho-chi-minh-online",
+    "title": "Không gian văn hóa Hồ Chí Minh online",
+    "goal": "Xây dựng lại một không gian văn hóa Hồ Chí Minh trực tuyến thống nhất, có timeline, tư liệu, quiz, âm nhạc, gallery và gương sáng Chi bộ 2.",
+    "language": "vi-VN",
+    "content_status": "filtered_and_reorganized",
+    "captured_at": "2026-05-23 Asia/Saigon"
+  },
+  "sources": {
+    "primary_official": [
+      {
+        "id": "dang-tu-lieu-tieu-su",
+        "title": "Tiểu sử Chủ tịch Hồ Chí Minh",
+        "url": "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/tieu-su-cuoc-doi-va-su-nghiep/tieu-su-chu-tich-ho-chi-minh-52",
+        "use_for": ["core biography", "timeline", "official framing"]
+      }
+    ],
+    "secondary_reference": [
+      {
+        "id": "wikipedia-vi-ho-chi-minh",
+        "title": "Hồ Chí Minh - Wikipedia tiếng Việt",
+        "url": "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh",
+        "use_for": ["topic discovery", "works", "names", "legacy", "cross-reference"]
+      }
+    ],
+    "original_web_experience": [
+      {
+        "id": "canva-hub-cb2",
+        "title": "CB2 - Không gian văn hóa Hồ Chí Minh",
+        "url": "https://kyniem136namngaysinhchutichhcm.my.canva.site/cb-2-khong-gian-van-hoa-hcm"
+      },
+      {
+        "id": "carrd-life-career",
+        "title": "Cuộc đời và sự nghiệp của Bác",
+        "url": "https://cuocdoivasunghiepcuabac.carrd.co/"
+      },
+      {
+        "id": "google-form-education-medicine",
+        "title": "Từ ánh chữ đến ánh người",
+        "url": "Google Forms quiz"
+      },
+      {
+        "id": "canva-songs",
+        "title": "Những ca khúc về Bác",
+        "url": "https://nhom4giaidieucuanguoi.my.canva.site/khonggianvanhoahcmto4cb2/"
+      },
+      {
+        "id": "netlify-monuments",
+        "title": "Tượng đài Bác ở các quốc gia",
+        "url": "https://to-3-khong-gian-van-hoa-bac.netlify.app/"
+      },
+      {
+        "id": "anyflip-stories",
+        "title": "Mẩu chuyện về Bác",
+        "url": "https://anyflip.com/xsckv/uttt/"
+      },
+      {
+        "id": "canva-role-models-cb2",
+        "title": "Gương sáng CB2",
+        "url": "https://kyniem136namngaysinhhcm.my.canva.site/guongsangcb2"
+      }
+    ]
+  },
+  "person_profile": {
+    "id": "ho-chi-minh",
+    "primary_name": "Hồ Chí Minh",
+    "birth": {
+      "date": "1890-05-19",
+      "place": "Kim Liên, Nam Đàn, Nghệ An"
+    },
+    "death": {
+      "date": "1969-09-02",
+      "place": "Hà Nội"
+    },
+    "names": [
+      {"name": "Nguyễn Sinh Cung", "context": "tên lúc nhỏ"},
+      {"name": "Nguyễn Tất Thành", "context": "tên khi đi học và tuổi trẻ"},
+      {"name": "Văn Ba", "context": "tên dùng khi làm việc trên tàu năm 1911"},
+      {"name": "Nguyễn Ái Quốc", "context": "tên hoạt động cách mạng ở Pháp và quốc tế"},
+      {"name": "Hồ Chí Minh", "context": "tên chính thức và phổ biến nhất về sau"},
+      {"name": "Trần Dân Tiên", "context": "bút danh/tên tác giả"},
+      {"name": "T. Lan", "context": "bút danh"}
+    ],
+    "roles": [
+      "lãnh tụ cách mạng Việt Nam",
+      "người sáng lập Đảng Cộng sản Việt Nam",
+      "Chủ tịch nước Việt Nam Dân chủ Cộng hòa",
+      "nhà văn, nhà thơ, nhà báo",
+      "nhân vật tiêu biểu của phong trào giải phóng dân tộc"
+    ],
+    "legacy_titles": [
+      "Anh hùng giải phóng dân tộc",
+      "Nhà văn hóa kiệt xuất của Việt Nam"
+    ]
+  },
+  "timeline": [
+    {
+      "period_id": "1890-1911",
+      "period_title": "Xuất thân và tuổi trẻ",
+      "events": [
+        {"date": "1890-05-19", "title": "Sinh tại Kim Liên, Nam Đàn, Nghệ An"},
+        {"date": "1911-06-03", "title": "Nhận thẻ nhân viên trên tàu với tên Văn Ba"},
+        {"date": "1911-06-05", "title": "Rời cảng Nhà Rồng đến Pháp"}
+      ]
+    },
+    {
+      "period_id": "1911-1930",
+      "period_title": "Hành trình tìm đường cứu nước",
+      "events": [
+        {"date": "1912/1917", "title": "Đi qua nhiều nước ở châu Á, châu Âu, châu Mỹ, châu Phi"},
+        {"date": "1917", "title": "Từ Anh trở lại Pháp"},
+        {"date": "1919", "title": "Gửi yêu sách tới Hội nghị Versailles với tên Nguyễn Ái Quốc"},
+        {"date": "1920-12", "title": "Tham dự Đại hội XVIII Đảng Xã hội Pháp, tán thành gia nhập Quốc tế Cộng sản"},
+        {"date": "1921/1922", "title": "Tham gia Hội Liên hiệp các dân tộc thuộc địa và báo Người cùng khổ"},
+        {"date": "1923-06", "title": "Sang Liên Xô làm việc tại Quốc tế Cộng sản"},
+        {"date": "1924-11", "title": "Đến Quảng Châu, Trung Quốc"},
+        {"date": "1925", "title": "Thành lập Hội Việt Nam Cách mạng Thanh niên, mở lớp huấn luyện, ra báo Thanh niên"},
+        {"date": "1930-02", "title": "Chủ trì Hội nghị thành lập Đảng Cộng sản Việt Nam tại Hồng Kông"}
+      ]
+    },
+    {
+      "period_id": "1930-1945",
+      "period_title": "Thành lập Đảng và Cách mạng Tháng Tám",
+      "events": [
+        {"date": "1931/1933", "title": "Bị bắt tại Hồng Kông và được trả tự do"},
+        {"date": "1941-01-28", "title": "Trở về Việt Nam sau hơn 30 năm xa Tổ quốc"},
+        {"date": "1941-05", "title": "Triệu tập Hội nghị Trung ương 8, thành lập Việt Minh"},
+        {"date": "1942/1943", "title": "Bị giam ở Quảng Tây, viết Nhật ký trong tù"},
+        {"date": "1944-12", "title": "Chỉ thị thành lập Đội Việt Nam tuyên truyền giải phóng quân"},
+        {"date": "1945-09-02", "title": "Đọc Tuyên ngôn độc lập tại Ba Đình"}
+      ]
+    },
+    {
+      "period_id": "1945-1969",
+      "period_title": "Lãnh đạo nhà nước và kháng chiến",
+      "events": [
+        {"date": "1946-12-19", "title": "Kêu gọi toàn quốc kháng chiến chống thực dân Pháp"},
+        {"date": "1951", "title": "Được bầu làm Chủ tịch Ban Chấp hành Trung ương Đảng tại Đại hội II"},
+        {"date": "1954-05-07", "title": "Chiến thắng Điện Biên Phủ"},
+        {"date": "1956-10", "title": "Được bầu làm Chủ tịch Đảng, kiêm Tổng Bí thư"},
+        {"date": "1960", "title": "Đại hội III bầu lại làm Chủ tịch Ban Chấp hành Trung ương Đảng Lao động Việt Nam"},
+        {"date": "1969-09-02", "title": "Qua đời tại Hà Nội, để lại Di chúc"}
+      ]
+    },
+    {
+      "period_id": "1975-1990",
+      "period_title": "Di sản và tôn vinh",
+      "events": [
+        {"date": "1975", "title": "Chiến dịch Hồ Chí Minh hoàn thành giải phóng miền Nam, thống nhất đất nước"},
+        {"date": "1987/1990", "title": "UNESCO thông qua nghị quyết tôn vinh nhân dịp kỷ niệm 100 năm ngày sinh"}
+      ]
+    }
+  ],
+  "site_modules": [
+    {
+      "id": "home",
+      "order": 0,
+      "title": "Trang chủ",
+      "type": "landing",
+      "summary": "Màn giới thiệu Không gian văn hóa Hồ Chí Minh, điều hướng vào các khu nội dung, tìm kiếm nhanh.",
+      "content": ["hero", "intro", "quick facts", "six-area navigation", "featured timeline", "featured works"]
+    },
+    {
+      "id": "profile",
+      "order": 1,
+      "title": "Hồ sơ Hồ Chí Minh",
+      "type": "profile",
+      "summary": "Factsheet, tên gọi, vai trò lịch sử, danh hiệu di sản.",
+      "content": ["birth/death", "names", "roles", "legacy titles", "source notes"]
+    },
+    {
+      "id": "timeline",
+      "order": 2,
+      "title": "Timeline cuộc đời và sự nghiệp",
+      "type": "interactive_timeline",
+      "summary": "Trục thời gian 1890-1990 dùng làm xương sống của website.",
+      "content": ["period cards", "event cards", "map points", "related works", "related media"]
+    },
+    {
+      "id": "life-and-career",
+      "order": 3,
+      "title": "Cuộc đời và sự nghiệp của Bác",
+      "type": "gallery_timeline",
+      "summary": "Chuyển gallery Carrd cũ thành các thẻ địa danh/mốc lịch sử có caption.",
+      "items": [
+        "Nơi Bác sinh ra",
+        "Ngôi trường Bác dạy",
+        "Nơi ra đi tìm đường cứu nước",
+        "Hành trình cứu nước",
+        "Nơi Bác viết Tuyên ngôn Độc lập",
+        "Nơi đánh dấu khai sinh nước Việt Nam Dân chủ Cộng hòa"
+      ]
+    },
+    {
+      "id": "thought-education-medicine",
+      "order": 4,
+      "title": "Tư tưởng, đạo đức, giáo dục, y tế",
+      "type": "learning_and_quiz",
+      "summary": "Tổ chức lại Google Form thành bài học ngắn và quiz có giải thích.",
+      "topics": [
+        "giáo dục toàn diện",
+        "học đi đôi với hành",
+        "đức và tài",
+        "học suốt đời",
+        "giáo dục phục vụ nhân dân",
+        "y đức và trách nhiệm người thầy thuốc"
+      ]
+    },
+    {
+      "id": "works-and-documents",
+      "order": 5,
+      "title": "Tác phẩm và tư liệu",
+      "type": "document_collection",
+      "summary": "Kho tác phẩm, văn kiện, thơ văn và bài báo liên quan.",
+      "works": [
+        {"id": "tuyen-ngon-doc-lap", "title": "Tuyên ngôn Độc lập", "year": 1945},
+        {"id": "ban-an-che-do-thuc-dan-phap", "title": "Bản án chế độ thực dân Pháp", "year": 1925},
+        {"id": "duong-kach-menh", "title": "Đường Kách mệnh", "year": 1927},
+        {"id": "nhat-ky-trong-tu", "title": "Nhật ký trong tù", "year": 1942},
+        {"id": "sua-doi-loi-lam-viec", "title": "Sửa đổi lối làm việc", "year": 1947},
+        {"id": "loi-keu-goi-toan-quoc-khang-chien", "title": "Lời kêu gọi toàn quốc kháng chiến", "year": 1946},
+        {"id": "di-chuc", "title": "Di chúc Hồ Chí Minh"}
+      ]
+    },
+    {
+      "id": "songs",
+      "order": 6,
+      "title": "Các ca khúc về Bác",
+      "type": "music_playlist",
+      "summary": "Playlist ca khúc, thẻ bài hát, bối cảnh, minigame.",
+      "songs": [
+        {"order": 1, "title": "Mùa xuân trên Thành phố Hồ Chí Minh", "creator": "Xuân Hồng", "performer": "Tùng Dương"},
+        {"order": 2, "title": "Ai yêu Bác Hồ Chí Minh hơn các em nhi đồng", "creator": "Phong Nhã", "performer": "Pia Linh"},
+        {"order": 3, "title": "Tuổi trẻ thế hệ Bác Hồ", "creator": "Triều Dâng", "performer": "Tùng Dương"},
+        {"order": 4, "title": "Như có Bác Hồ trong ngày vui đại thắng", "creator": "Phạm Tuyên", "performer": "Tốp ca Nhạc viện TP.HCM"},
+        {"order": 5, "title": "Bác đang cùng chúng cháu hành quân", "creator": "Huy Thục", "performer": "Tốp ca nam Trường Đại học Văn hóa Nghệ thuật Quân đội"},
+        {"order": 6, "title": "Ca ngợi Hồ Chủ tịch", "creator": "Văn Cao", "performer": "NSND Quốc Hưng"},
+        {"order": 7, "title": "Viếng lăng Bác", "creator": "Hoàng Hiệp", "poem_by": "Viễn Phương", "performer": "NSND Quốc Hưng"},
+        {"order": 8, "title": "Đêm qua em mơ gặp Bác Hồ", "creator": "Xuân Giao", "performer": "Hoài Anh"},
+        {"order": 9, "title": "Miền Trung nhớ Bác", "creator": "Phạm Minh Tuấn", "performer": "Thu Hiền"},
+        {"order": 10, "title": "Dấu chân phía trước", "creator": "Phạm Minh Tuấn", "performer": "Vũ Thắng Lợi"},
+        {"order": 11, "title": "Minigame Đố vui nhớ Bác"}
+      ]
+    },
+    {
+      "id": "world-monuments",
+      "order": 7,
+      "title": "Tượng đài Bác ở các quốc gia",
+      "type": "world_map_gallery",
+      "summary": "Gallery 20 quốc gia, nên nâng cấp thành bản đồ thế giới tương tác.",
+      "countries": [
+        "Ấn Độ",
+        "Cuba",
+        "Hungary",
+        "Nga",
+        "Pháp",
+        "Thái Lan",
+        "Trung Quốc",
+        "Argentina",
+        "Chile",
+        "Mexico",
+        "Philippines",
+        "Singapore",
+        "Slovakia",
+        "Algeria",
+        "Angola",
+        "Anh",
+        "Hoa Kỳ",
+        "Madagascar",
+        "Nhật Bản",
+        "Sri Lanka"
+      ]
+    },
+    {
+      "id": "stories",
+      "order": 8,
+      "title": "Những mẩu chuyện về Bác",
+      "type": "story_cards",
+      "summary": "Chuyển ebook AnyFlip thành các thẻ câu chuyện có bài học và câu hỏi suy ngẫm.",
+      "stories": [
+        {"title": "Bác Hồ và những lời căn dặn đối với người thầy thuốc", "topics": ["y đức", "chăm sóc người bệnh", "đoàn kết ngành y"]},
+        {"title": "Phải chăm chỉ học tập", "topics": ["học tập", "phục vụ nhân dân", "tự rèn luyện"]},
+        {"title": "Thời gian quý báu lắm", "topics": ["đúng giờ", "kỷ luật", "tôn trọng tập thể"]},
+        {"title": "Đôi bàn tay", "topics": ["tự lực", "ý chí", "lao động"]},
+        {"title": "Bác Hồ với tinh thần tự học", "topics": ["tự học", "ngoại ngữ", "học suốt đời"]}
+      ]
+    },
+    {
+      "id": "role-models-cb2",
+      "order": 9,
+      "title": "Gương sáng Chi bộ 2",
+      "type": "event_gallery_and_profiles",
+      "summary": "Ảnh sự kiện, khen thưởng, gương sáng học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh.",
+      "events": [
+        "Biểu dương, khen thưởng tập thể/cá nhân năm 2024",
+        "Sơ kết 04 năm thực hiện Kết luận 01-KL/TW và khen thưởng năm 2025",
+        "Kỷ niệm 136 năm ngày sinh Chủ tịch Hồ Chí Minh và trao Huy hiệu Đảng đợt 19/05/2026",
+        "Hội nghị quán triệt nghị quyết năm 2025"
+      ]
+    },
+    {
+      "id": "sources-and-verification",
+      "order": 10,
+      "title": "Nguồn và kiểm chứng",
+      "type": "source_notes",
+      "summary": "Ghi rõ nguồn, phân biệt nguồn chính thống, nguồn bách khoa, nguồn web gốc và vấn đề bản quyền media.",
+      "notes": [
+        "Mốc lịch sử trọng tâm nên ưu tiên Tư liệu Văn kiện Đảng.",
+        "Wikipedia dùng tốt cho mở rộng chủ đề nhưng cần kiểm chứng khi xuất bản.",
+        "Lời bài hát, ảnh, audio, scan tài liệu cần kiểm tra bản quyền trước khi đưa lên web công khai."
+      ]
+    }
+  ],
+  "recommended_build_features": [
+    "responsive museum-style homepage",
+    "sitewide search",
+    "interactive timeline",
+    "journey map",
+    "document/works library",
+    "quiz with score and answer explanation",
+    "music player and song quiz",
+    "world map for monuments",
+    "story cards with reflection questions",
+    "event gallery with captions and filters",
+    "source attribution per content item"
+  ],
+  "suggested_content_files_for_app": [
+    "content/person-profile.json",
+    "content/timeline.json",
+    "content/modules.json",
+    "content/works.json",
+    "content/songs.json",
+    "content/stories.json",
+    "content/monuments.json",
+    "content/role-models.json",
+    "content/sources.json"
+  ]
+}

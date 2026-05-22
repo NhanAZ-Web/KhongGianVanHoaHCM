@@ -1,0 +1,203 @@
+{
+  "dataset_name": "khong-gian-van-hoa-ho-chi-minh-reference",
+  "captured_at": "2026-05-23 Asia/Saigon",
+  "source_main_url": "https://kyniem136namngaysinhchutichhcm.my.canva.site/cb-2-khong-gian-van-hoa-hcm",
+  "copyright_note": "Structured summary and metadata only. Long source passages and song lyrics are intentionally omitted.",
+  "site": {
+    "title": "Không gian văn hóa Hồ Chí Minh",
+    "owner_display": "Đảng bộ Trường Đại học Quốc tế Hồng Bàng - Chi bộ 2",
+    "format": "hub landing page linking to six external/sub experiences",
+    "visual_style": ["red", "pink", "white", "Ho Chi Minh imagery", "event poster typography"],
+    "intro_summary": "Short biographical introduction to President Ho Chi Minh, including birth name, revolutionary names, birth date, and birthplace."
+  },
+  "modules": [
+    {
+      "id": "home",
+      "title": "Trang chủ",
+      "type": "landing_hub",
+      "content_items": [
+        "Hero identity block",
+        "Short Ho Chi Minh biography",
+        "Navigation cards to six sections"
+      ]
+    },
+    {
+      "id": "life-and-career",
+      "title": "Cuộc đời và sự nghiệp của Bác",
+      "type": "gallery_with_drive_links",
+      "source_url": "https://cuocdoivasunghiepcuabac.carrd.co/",
+      "items": [
+        {"id": "birthplace", "title": "Nơi Bác sinh ra", "content_type": "image_or_drive_media"},
+        {"id": "teaching-school", "title": "Ngôi trường Bác dạy", "content_type": "image_or_drive_media"},
+        {"id": "departure", "title": "Nơi ra đi tìm đường cứu nước", "content_type": "image_or_drive_media"},
+        {"id": "journey-1", "title": "Hành trình cứu nước", "content_type": "image_or_drive_media"},
+        {"id": "journey-2", "title": "Hành trình cứu nước", "content_type": "image_or_drive_media"},
+        {"id": "journey-3", "title": "Hành trình cứu nước", "content_type": "image_or_drive_media"},
+        {"id": "journey-4", "title": "Hành trình cứu nước", "content_type": "image_or_drive_media"},
+        {"id": "declaration", "title": "Nơi Bác viết Tuyên ngôn Độc lập", "content_type": "image_or_drive_media"},
+        {"id": "democratic-republic", "title": "Nơi đánh dấu khai sinh nước Việt Nam Dân chủ Cộng hòa", "content_type": "image_or_drive_media"}
+      ],
+      "upgrade_ideas": ["interactive timeline", "journey map", "short captions", "documentary media links"]
+    },
+    {
+      "id": "education-and-medicine-thought",
+      "title": "Tư tưởng giáo dục, y tế của Bác",
+      "type": "quiz_form",
+      "source_url": "Google Forms: Từ ánh chữ đến ánh người",
+      "fields": ["Họ và tên", "MSSV"],
+      "intro_topics": [
+        "Ho Chi Minh's thought on education",
+        "Education as cultivation of knowledge, ethics, ideals, responsibility, and service",
+        "Revolutionary education example through the 'Những hạt giống đỏ' prompt"
+      ],
+      "question_topic_groups": [
+        "Ho Chi Minh quotes on learning and national future",
+        "Comprehensive education: morality, intellect, physical education, aesthetics",
+        "Learning with practice and theory with reality",
+        "Relationship between virtue and talent",
+        "Lifelong learning and education for all",
+        "Education serving people and country",
+        "Role of talent and knowledge in national strength",
+        "Medical ethics and responsibility toward patients"
+      ],
+      "upgrade_ideas": ["multi-stage quiz game", "answer explanations", "scores and badges", "larger question bank"]
+    },
+    {
+      "id": "songs-about-ho-chi-minh",
+      "title": "Các ca khúc về Bác",
+      "type": "music_showcase_and_minigame",
+      "source_url": "https://nhom4giaidieucuanguoi.my.canva.site/khonggianvanhoahcmto4cb2/",
+      "page_structure": [
+        "Start screen",
+        "Song list",
+        "Song details pages",
+        "Minigame and thank-you screen"
+      ],
+      "songs": [
+        {"order": 1, "title": "Mùa xuân trên Thành phố Hồ Chí Minh", "creator": "Xuân Hồng", "performer": "Tùng Dương"},
+        {"order": 2, "title": "Ai yêu Bác Hồ Chí Minh hơn các em nhi đồng", "creator": "Phong Nhã", "performer": "Pia Linh"},
+        {"order": 3, "title": "Tuổi trẻ thế hệ Bác Hồ", "creator": "Triều Dâng", "performer": "Tùng Dương"},
+        {"order": 4, "title": "Như có Bác Hồ trong ngày vui đại thắng", "creator": "Phạm Tuyên", "performer": "Tốp ca Nhạc viện TP.HCM"},
+        {"order": 5, "title": "Bác đang cùng chúng cháu hành quân", "creator": "Huy Thục", "performer": "Tốp ca nam Trường Đại học Văn hóa Nghệ thuật Quân đội"},
+        {"order": 6, "title": "Ca ngợi Hồ Chủ tịch", "creator": "Văn Cao", "performer": "NSND Quốc Hưng"},
+        {"order": 7, "title": "Viếng lăng Bác", "creator": "Hoàng Hiệp", "poem_by": "Viễn Phương", "performer": "NSND Quốc Hưng"},
+        {"order": 8, "title": "Đêm qua em mơ gặp Bác Hồ", "creator": "Xuân Giao", "performer": "Hoài Anh"},
+        {"order": 9, "title": "Miền Trung nhớ Bác", "creator": "Phạm Minh Tuấn", "performer": "Thu Hiền"},
+        {"order": 10, "title": "Dấu chân phía trước", "creator": "Phạm Minh Tuấn", "performer": "Vũ Thắng Lợi"},
+        {"order": 11, "title": "Minigame Đố vui nhớ Bác", "creator": null, "performer": null}
+      ],
+      "upgrade_ideas": ["playlist player", "song cards", "guess-the-song minigame", "theme filters"]
+    },
+    {
+      "id": "monuments-around-the-world",
+      "title": "Tượng đài Bác ở các quốc gia",
+      "type": "image_gallery",
+      "source_url": "https://to-3-khong-gian-van-hoa-bac.netlify.app/",
+      "gallery_features": ["grid", "lightbox", "previous/next", "zoom", "open original"],
+      "countries": [
+        "Ấn Độ",
+        "Cuba",
+        "Hungary",
+        "Nga",
+        "Pháp",
+        "Thái Lan",
+        "Trung Quốc",
+        "Argentina",
+        "Chile",
+        "Mexico",
+        "Philippines",
+        "Singapore",
+        "Slovakia",
+        "Algeria",
+        "Angola",
+        "Anh",
+        "Hoa Kỳ",
+        "Madagascar",
+        "Nhật Bản",
+        "Sri Lanka"
+      ],
+      "upgrade_ideas": ["world map view", "country metadata", "timeline of cultural diplomacy", "continent filters"]
+    },
+    {
+      "id": "stories-about-ho-chi-minh",
+      "title": "Những mẩu chuyện về Bác",
+      "type": "ebook_story_collection",
+      "source_url": "https://anyflip.com/xsckv/uttt/",
+      "publisher_display": "Nguyễn Hy",
+      "published_at": "2026-05-16",
+      "page_count": 13,
+      "stories": [
+        {
+          "id": "doctor-advice",
+          "title": "Bác Hồ và những lời căn dặn đối với người thầy thuốc",
+          "topics": ["medical ethics", "patient care", "solidarity in medicine"],
+          "lesson_summary": "Serve patients with conscience, responsibility, compassion, and professional solidarity."
+        },
+        {
+          "id": "study-diligently",
+          "title": "Phải chăm chỉ học tập",
+          "topics": ["learning", "service to people", "self-improvement"],
+          "lesson_summary": "Study continuously to improve ability and serve the people better."
+        },
+        {
+          "id": "precious-time",
+          "title": "Thời gian quý báu lắm",
+          "topics": ["punctuality", "discipline", "respect for others"],
+          "lesson_summary": "Respect time, keep promises, and avoid making the collective wait."
+        },
+        {
+          "id": "two-hands",
+          "title": "Đôi bàn tay",
+          "topics": ["self-reliance", "national salvation journey", "labor"],
+          "lesson_summary": "Courage, determination, and labor can open a path through hardship."
+        },
+        {
+          "id": "self-learning",
+          "title": "Bác Hồ với tinh thần tự học",
+          "topics": ["self-learning", "foreign language", "writing", "lifelong learning"],
+          "lesson_summary": "Self-learning is a disciplined, creative, lifelong method for personal growth."
+        }
+      ],
+      "upgrade_ideas": ["story cards", "audio narration", "reflection questions", "three-minute reading mode"]
+    },
+    {
+      "id": "role-models-cb2",
+      "title": "Gương sáng Chi bộ 2",
+      "type": "photo_gallery",
+      "source_url": "https://kyniem136namngaysinhhcm.my.canva.site/guongsangcb2",
+      "content_summary": [
+        "Photos of collectives and individuals receiving commendations for studying and following Ho Chi Minh's thought, morality, and style.",
+        "Event imagery from 2024, 2025, and 2026 recognition/commemoration programs.",
+        "Group photos of students, lecturers, and representatives with certificates and awards."
+      ],
+      "detected_events": [
+        "Recognition of collectives and individuals in 2024",
+        "Four-year review of Conclusion 01-KL/TW and 2025 commendation program",
+        "Commemoration of the 136th birth anniversary of President Ho Chi Minh and 2026 Party badge ceremony",
+        "Conference on resolutions 66-NQ/TW and 68-NQ/TW in 2025"
+      ],
+      "upgrade_ideas": ["captions for every photo", "profiles for role models", "year filters", "achievement stories"]
+    }
+  ],
+  "recommended_information_architecture": {
+    "content_files": [
+      "pages.json",
+      "timeline.json",
+      "quiz.json",
+      "songs.json",
+      "monuments.json",
+      "stories.json",
+      "role-models.json"
+    ],
+    "core_features": [
+      "unified museum-style homepage",
+      "sitewide search",
+      "interactive timeline",
+      "world map for monuments",
+      "music player and song quiz",
+      "story reading mode with audio",
+      "badge/scoring system for quizzes",
+      "admin-friendly JSON content model"
+    ]
+  }
+}
