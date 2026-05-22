@@ -41,7 +41,7 @@ export default function ImagePlaceholder({
         {alt}
       </p>
       <p className="mt-2 text-xs text-gray-sub text-center px-4">
-        {"C\u1EA7n b\u1ED5 sung \u1EA3nh: "}{path}
+        Cần bổ sung ảnh: {path}
       </p>
     </div>
   );

@@ -21,7 +21,7 @@ export default function ScrollToTop() {
     <button
       onClick={scrollToTop}
       className="fixed bottom-6 right-6 z-40 w-12 h-12 bg-lotus-pink text-white rounded-full shadow-lg hover:bg-lotus-pink/90 hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
-      aria-label="Cu\u1ed9n l\u00ean \u0111\u1ea7u trang"
+      aria-label="Cuộn lên đầu trang"
     >
       <svg
         className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform"

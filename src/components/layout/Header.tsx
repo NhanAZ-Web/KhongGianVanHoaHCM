@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react'
 
 const navItems = [
-  { id: 'hero', label: 'Trang ch\u1ee7' },
-  { id: 'ho-so', label: 'H\u1ed3 s\u01a1' },
+  { id: 'hero', label: 'Trang chủ' },
+  { id: 'ho-so', label: 'Hồ sơ' },
   { id: 'timeline', label: 'Timeline' },
-  { id: 'cuoc-doi', label: 'Cu\u1ed9c \u0111\u1eddi' },
-  { id: 'tu-tuong', label: 'T\u01b0 t\u01b0\u1edfng' },
-  { id: 'tac-pham', label: 'T\u00e1c ph\u1ea9m' },
-  { id: 'am-nhac', label: '\u00c2m nh\u1ea1c' },
-  { id: 'tuong-dai', label: 'T\u01b0\u1ee3ng \u0111\u00e0i' },
-  { id: 'cau-chuyen', label: 'C\u00e2u chuy\u1ec7n' },
-  { id: 'nguon', label: 'Ngu\u1ed3n' },
+  { id: 'cuoc-doi', label: 'Cuộc đời' },
+  { id: 'tu-tuong', label: 'Tư tưởng' },
+  { id: 'tac-pham', label: 'Tác phẩm' },
+  { id: 'am-nhac', label: 'Âm nhạc' },
+  { id: 'tuong-dai', label: 'Tượng đài' },
+  { id: 'cau-chuyen', label: 'Câu chuyện' },
+  { id: 'nguon', label: 'Nguồn' },
 ]
 
 function MenuIcon() {
@@ -103,7 +103,7 @@ export default function Header() {
               </svg>
             </div>
             <span className="font-heading font-bold text-sm md:text-base text-ink hidden sm:block">
-              KG V\u0103n h\u00f3a HCM
+              KG Văn hóa HCM
             </span>
           </button>
 
@@ -124,7 +124,7 @@ export default function Header() {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-ink hover:bg-lotus-light rounded-lg transition-colors"
-            aria-label={isMobileMenuOpen ? '\u0110\u00f3ng menu' : 'M\u1edf menu'}
+            aria-label={isMobileMenuOpen ? 'Đóng menu' : 'Mở menu'}
           >
             {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
