@@ -1527,14 +1527,14 @@ export default function HomePage() {
           />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {stories.map((story) => (
-              <Card key={story.id} className="p-5">
+              <Card key={story.id} className="flex h-full flex-col p-5">
                 <ImagePlaceholder
                   path={`/assets/images/stories/${story.id}.jpg`}
                   alt={`Ảnh minh họa câu chuyện: ${story.title}`}
                   aspectRatio="16/10"
                   className="-mx-5 -mt-5 mb-5 rounded-b-none"
                 />
-                <h3 className="font-heading text-xl font-bold">
+                <h3 className="font-heading text-[1.02rem] font-bold leading-snug">
                   {story.title}
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-gray-sub">
@@ -1549,7 +1549,7 @@ export default function HomePage() {
                 </div>
                 <button
                   onClick={() => setSelectedStory(story)}
-                  className="mt-5 text-sm font-semibold text-lotus-pink transition hover:text-red-formal"
+                  className="mt-auto pt-5 text-left text-sm font-semibold text-lotus-pink transition hover:text-red-formal"
                 >
                   Xem bài học và câu hỏi
                 </button>
