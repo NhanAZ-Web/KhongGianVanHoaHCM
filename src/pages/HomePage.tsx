@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Badge from '../components/ui/Badge';
 import Card from '../components/ui/Card';
 import FilterTabs from '../components/ui/FilterTabs';
@@ -846,13 +846,10 @@ const roleModelActivities = [
   },
 ];
 
-const timelineTabs = [
-  { id: 'all', label: 'Tất cả' },
-  ...timelineData.map((period) => ({
-    id: period.periodId,
-    label: period.periodTitle,
-  })),
-];
+const timelineTabs = timelineData.map((period) => ({
+  id: period.periodId,
+  label: period.periodTitle,
+}));
 
 const workTabs = [
   { id: 'all', label: 'Tất cả' },
@@ -912,7 +909,7 @@ function YouTubeEmbedPlaceholder({ song }: { song: Song }) {
 }
 
 export default function HomePage() {
-  const [timelineFilter, setTimelineFilter] = useState('all');
+  const [timelineFilter, setTimelineFilter] = useState(timelineData[0].periodId);
   const [workFilter, setWorkFilter] = useState('all');
   const [monumentFilter, setMonumentFilter] = useState('all');
   const [selectedStory, setSelectedStory] = useState<Story | null>(null);
@@ -939,8 +936,41 @@ export default function HomePage() {
 
   const scrollToTimelinePeriod = (id: string) => {
     setTimelineFilter(id);
-    scrollToSection(id === 'all' ? 'timeline' : `timeline-${id}`);
+    scrollToSection(`timeline-${id}`);
   };
+
+  useEffect(() => {
+    const updateActiveTimelinePeriod = () => {
+      const readingLine = window.scrollY + (window.innerWidth >= 768 ? 128 : 104);
+      let activePeriod = timelineData[0].periodId;
+
+      timelineData.forEach((period) => {
+        const section = document.getElementById(`timeline-${period.periodId}`);
+        if (section && section.offsetTop <= readingLine) {
+          activePeriod = period.periodId;
+        }
+      });
+
+      setTimelineFilter((current) =>
+        current === activePeriod ? current : activePeriod,
+      );
+    };
+
+    let frameId = window.requestAnimationFrame(updateActiveTimelinePeriod);
+    const requestUpdate = () => {
+      window.cancelAnimationFrame(frameId);
+      frameId = window.requestAnimationFrame(updateActiveTimelinePeriod);
+    };
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener('scroll', requestUpdate);
+      window.removeEventListener('resize', requestUpdate);
+    };
+  }, []);
 
   const setQuizAnswer = (questionId: number, optionIndex: number) => {
     setQuizAnswers((current) => ({ ...current, [questionId]: optionIndex }));
@@ -1254,7 +1284,10 @@ export default function HomePage() {
                             : 'bg-white text-gray-sub hover:bg-lotus-pale hover:text-ink'
                         }`}
                       >
-                        {tab.label}
+                        <span className="block text-xs font-heading font-bold text-current/70">
+                          {tab.id}
+                        </span>
+                        <span className="mt-0.5 block">{tab.label}</span>
                       </button>
                     );
                   })}
