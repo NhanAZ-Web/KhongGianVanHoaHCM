@@ -23,7 +23,7 @@ export default function LotusWatermark({
            C80 120, 95 140, 100 160
            C105 140, 120 120, 125 100
            C120 80, 105 60, 100 30Z"
-        fill="#E85D8E"
+        fill="#F73582"
       />
       {/* Canh hoa ben trai - gan */}
       <path
@@ -32,7 +32,7 @@ export default function LotusWatermark({
            C50 105, 70 130, 90 145
            C85 125, 80 100, 80 85
            C82 70, 92 55, 100 50Z"
-        fill="#E85D8E"
+        fill="#F73582"
       />
       {/* Canh hoa ben phai - gan */}
       <path
@@ -41,7 +41,7 @@ export default function LotusWatermark({
            C150 105, 130 130, 110 145
            C115 125, 120 100, 120 85
            C118 70, 108 55, 100 50Z"
-        fill="#E85D8E"
+        fill="#F73582"
       />
       {/* Canh hoa ben trai - xa */}
       <path
@@ -50,7 +50,7 @@ export default function LotusWatermark({
            C30 80, 50 105, 75 120
            C65 105, 60 85, 65 75
            C70 68, 80 63, 90 65Z"
-        fill="#E85D8E"
+        fill="#F73582"
       />
       {/* Canh hoa ben phai - xa */}
       <path
@@ -59,14 +59,14 @@ export default function LotusWatermark({
            C170 80, 150 105, 125 120
            C135 105, 140 85, 135 75
            C130 68, 120 63, 110 65Z"
-        fill="#E85D8E"
+        fill="#F73582"
       />
       {/* Nhi hoa */}
-      <circle cx="100" cy="95" r="8" fill="#E85D8E" opacity="0.6" />
+      <circle cx="100" cy="95" r="8" fill="#F73582" opacity="0.6" />
       {/* Cuong hoa */}
       <path
         d="M100 160 L100 185"
-        stroke="#E85D8E"
+        stroke="#F73582"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
@@ -75,7 +75,7 @@ export default function LotusWatermark({
         d="M100 175
            C85 172, 60 168, 50 158
            C55 165, 70 172, 95 178Z"
-        fill="#E85D8E"
+        fill="#F73582"
         opacity="0.5"
       />
       {/* La ben phai */}
@@ -83,7 +83,7 @@ export default function LotusWatermark({
         d="M100 175
            C115 172, 140 168, 150 158
            C145 165, 130 172, 105 178Z"
-        fill="#E85D8E"
+        fill="#F73582"
         opacity="0.5"
       />
     </svg>

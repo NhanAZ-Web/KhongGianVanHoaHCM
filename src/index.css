@@ -12,6 +12,15 @@
 
 @font-face {
   font-family: 'DT PhuDu';
+  src: url('./assets/fonts/DTPhudu-Bold.woff2') format('woff2'),
+       url('./assets/fonts/DTPhudu-Bold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DT PhuDu';
   src: url('./assets/fonts/DTPhudu-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -27,7 +36,7 @@
 }
 
 @theme {
-  --color-lotus-pink: #E85D8E;
+  --color-lotus-pink: #F73582;
   --color-lotus-light: #FFF1F6;
   --color-lotus-pale: #FDECF2;
   --color-leaf-green: #2F7D4A;
@@ -100,6 +109,59 @@ h6 {
   font-family: var(--font-heading);
   line-height: 1.25;
   margin: 0;
+}
+
+.hero-gradient-title {
+  display: inline-block;
+  position: relative;
+}
+
+.hero-gradient-title-stroke {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  color: #ffffff;
+  -webkit-text-stroke: 8px #ffffff;
+  filter: drop-shadow(0 8px 12px rgb(247 53 130 / 0.32));
+  pointer-events: none;
+}
+
+.hero-gradient-title-fill {
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  background: linear-gradient(180deg, #ee2a7b 0%, #ff9351 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-gradient-text {
+  color: transparent;
+  background: linear-gradient(180deg, #ee2a7b 0%, #ff9351 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgb(247 53 130 / 0.18));
+}
+
+.section-display-title {
+  color: var(--color-lotus-pink);
+  -webkit-text-stroke: 4px #ffffff;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 5px 9px rgb(247 53 130 / 0.22));
+}
+
+@media (min-width: 768px) {
+  .section-display-title {
+    -webkit-text-stroke-width: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-gradient-title-stroke {
+    -webkit-text-stroke-width: 10px;
+  }
 }
 
 /* === Focus === */

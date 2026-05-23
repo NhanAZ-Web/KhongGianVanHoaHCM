@@ -931,8 +931,16 @@ export default function HomePage() {
         <div className="section-container relative z-10 grid min-h-[calc(100vh-8rem)] items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <Badge variant="red">Không gian số học tập và lan tỏa</Badge>
-            <h1 className="mt-5 max-w-4xl font-heading text-4xl font-bold leading-tight text-ink md:text-6xl">
-              Không gian Văn hóa Hồ Chí Minh
+            <h1
+              className="hero-gradient-title mt-5 max-w-4xl font-heading text-4xl font-black leading-tight md:text-6xl"
+              aria-label="Không gian Văn hóa Hồ Chí Minh"
+            >
+              <span className="hero-gradient-title-stroke" aria-hidden="true">
+                Không gian Văn hóa Hồ Chí Minh
+              </span>
+              <span className="hero-gradient-title-fill" aria-hidden="true">
+                Không gian Văn hóa Hồ Chí Minh
+              </span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-gray-sub md:text-lg">
               Không gian số giới thiệu cuộc đời, sự nghiệp, tư tưởng, đạo đức

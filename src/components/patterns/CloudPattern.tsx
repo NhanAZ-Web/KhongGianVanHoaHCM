@@ -31,7 +31,7 @@ export default function CloudPattern({ className = '' }: CloudPatternProps) {
                C148 70, 142 78, 130 78
                L30 78
                C22 78, 18 74, 20 70Z"
-            fill="#E85D8E"
+            fill="#F73582"
             opacity="0.035"
           />
           {/* Duoi may cuon */}
@@ -39,21 +39,21 @@ export default function CloudPattern({ className = '' }: CloudPatternProps) {
             d="M40 78
                C45 82, 42 88, 35 86
                C30 84, 32 78, 40 78Z"
-            fill="#E85D8E"
+            fill="#F73582"
             opacity="0.025"
           />
           <path
             d="M80 78
                C85 84, 80 90, 73 87
                C68 84, 72 78, 80 78Z"
-            fill="#E85D8E"
+            fill="#F73582"
             opacity="0.025"
           />
           <path
             d="M120 78
                C124 83, 120 88, 114 86
                C110 83, 113 78, 120 78Z"
-            fill="#E85D8E"
+            fill="#F73582"
             opacity="0.025"
           />
         </pattern>

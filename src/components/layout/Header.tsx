@@ -190,7 +190,7 @@ export default function Header() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <span className="font-heading font-bold text-sm md:text-base text-ink hidden sm:block">
+            <span className="brand-gradient-text hidden font-heading text-sm font-black md:text-base sm:block">
               Không gian Văn hóa Hồ Chí Minh
             </span>
           </button>

@@ -13,7 +13,7 @@ export default function SectionTitle({
 }: SectionTitleProps) {
   return (
     <div id={id} className={`scroll-mt-24 text-center mb-10 ${className}`}>
-      <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-ink leading-tight">
+      <h2 className="section-display-title font-heading text-2xl md:text-3xl lg:text-4xl font-black leading-tight">
         {title}
       </h2>
 
@@ -29,13 +29,13 @@ export default function SectionTitle({
           aria-hidden="true"
         >
           {/* Canh sen don gian */}
-          <ellipse cx="6" cy="3.5" rx="2" ry="3.5" fill="#E85D8E" />
+          <ellipse cx="6" cy="3.5" rx="2" ry="3.5" fill="#F73582" />
           <ellipse
             cx="3.2"
             cy="5"
             rx="1.8"
             ry="3"
-            fill="#E85D8E"
+            fill="#F73582"
             transform="rotate(-30 3.2 5)"
           />
           <ellipse
@@ -43,10 +43,10 @@ export default function SectionTitle({
             cy="5"
             rx="1.8"
             ry="3"
-            fill="#E85D8E"
+            fill="#F73582"
             transform="rotate(30 8.8 5)"
           />
-          <circle cx="6" cy="5" r="1.2" fill="#E85D8E" opacity="0.5" />
+          <circle cx="6" cy="5" r="1.2" fill="#F73582" opacity="0.5" />
         </svg>
         <span className="block h-[1px] w-12 bg-lotus-pink/40" />
       </div>

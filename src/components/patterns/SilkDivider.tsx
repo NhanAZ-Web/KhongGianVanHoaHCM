@@ -38,7 +38,7 @@ export default function SilkDivider({
              C480 7, 600 62, 720 42
              C840 22, 960 57, 1080 32
              C1200 7, 1320 52, 1440 37"
-          stroke="#E85D8E"
+          stroke="#F73582"
           strokeWidth="1"
           strokeOpacity="0.35"
           fill="none"
@@ -50,7 +50,7 @@ export default function SilkDivider({
              C480 18, 600 68, 720 48
              C840 28, 960 63, 1080 38
              C1200 13, 1320 58, 1440 42"
-          stroke="#E85D8E"
+          stroke="#F73582"
           strokeWidth="0.5"
           strokeOpacity="0.2"
           fill="none"

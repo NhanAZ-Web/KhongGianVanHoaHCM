@@ -7,7 +7,7 @@ export default function DrumPattern({
   className = '',
   opacity = 0.03,
 }: DrumPatternProps) {
-  const strokeColor = '#E85D8E';
+  const strokeColor = '#F73582';
 
   // Tao cac tia mat troi toa ra tu tam
   const sunRays = Array.from({ length: 16 }, (_, i) => {
