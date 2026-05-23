@@ -70,7 +70,7 @@ export interface Song {
   poemBy?: string;
   context?: string;
   theme?: string;
-  audioStatus: 'placeholder';
+  youtubeId?: string;
 }
 
 export interface Monument {

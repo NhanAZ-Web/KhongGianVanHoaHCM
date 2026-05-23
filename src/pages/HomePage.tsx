@@ -407,114 +407,94 @@ const works: Work[] = [
 const songs: Song[] = [
   {
     order: 1,
-    title: 'Mùa xuân trên Thành phố Hồ Chí Minh',
-    creator: 'Xuân Hồng',
-    performer: 'Tùng Dương',
-    context:
-      'Ca khúc thường được dùng trong không khí mừng xuân, mừng đất nước thống nhất và niềm tự hào về thành phố mang tên Bác.',
-    theme: 'Thành phố mang tên Bác',
-    audioStatus: 'placeholder',
-  },
-  {
-    order: 2,
     title: 'Ai yêu Bác Hồ Chí Minh hơn thiếu niên nhi đồng',
     creator: 'Phong Nhã',
-    performer: 'Pia Linh hoặc thiếu nhi, hợp xướng',
+    performer: 'Tốp ca thiếu nhi',
     context:
       'Bài hát gần gũi với thiếu nhi, phù hợp làm điểm mở đầu cho khu vực âm nhạc và giáo dục tình cảm kính yêu Bác.',
     theme: 'Thiếu nhi',
-    audioStatus: 'placeholder',
+    youtubeId: '_B-GCQuH6O0',
   },
   {
-    order: 3,
+    order: 2,
     title: 'Tuổi trẻ thế hệ Bác Hồ',
     creator: 'Triều Dâng',
     performer: 'Tùng Dương',
     context:
       'Gợi tinh thần thanh niên sống có lý tưởng, học tập, rèn luyện và tiếp nối con đường mà Bác Hồ đã lựa chọn.',
     theme: 'Thanh niên',
-    audioStatus: 'placeholder',
+    youtubeId: 'ZpCjyf99fq0',
   },
   {
-    order: 4,
+    order: 3,
     title: 'Như có Bác Hồ trong ngày vui đại thắng',
     creator: 'Phạm Tuyên',
     performer: 'Tốp ca Nhạc viện TP.HCM',
     context:
       'Ca khúc gắn với niềm vui chiến thắng, thống nhất đất nước; rất phù hợp cho mốc 1975 trong timeline.',
     theme: 'Đại thắng mùa xuân',
-    audioStatus: 'placeholder',
+    youtubeId: 'HFSCN9RadB8',
   },
   {
-    order: 5,
+    order: 4,
     title: 'Bác đang cùng chúng cháu hành quân',
     creator: 'Huy Thục',
     performer: 'Tốp ca nam Trường Đại học Văn hóa Nghệ thuật Quân đội',
     context:
       'Bài hát thể hiện hình ảnh Bác như nguồn động viên tinh thần trên mỗi chặng đường chiến đấu và xây dựng.',
     theme: 'Người lính',
-    audioStatus: 'placeholder',
+    youtubeId: '6ZLlLhHRg48',
   },
   {
-    order: 6,
+    order: 5,
     title: 'Ca ngợi Hồ Chủ tịch',
     creator: 'Văn Cao',
-    performer: 'NSND Quốc Hưng hoặc hợp xướng',
+    performer: 'Trọng Tấn',
     context:
       'Một ca khúc trang trọng, phù hợp đặt trong phần mở đầu hoặc phần nghi thức của không gian văn hóa.',
     theme: 'Ca ngợi lãnh tụ',
-    audioStatus: 'placeholder',
+    youtubeId: 'ING9CrBNSls',
   },
   {
-    order: 7,
+    order: 6,
     title: 'Viếng lăng Bác',
     creator: 'Hoàng Hiệp',
-    performer: 'NSND Quốc Hưng',
+    performer: 'Trọng Tấn',
     poemBy: 'Viễn Phương',
     context:
       'Bài hát phổ thơ Viễn Phương, có sắc thái trữ tình và thành kính, phù hợp cho phần cảm nhận, tưởng niệm.',
     theme: 'Lăng Bác',
-    audioStatus: 'placeholder',
+    youtubeId: 'UDE84LYR_vw',
   },
   {
-    order: 8,
+    order: 7,
     title: 'Đêm qua em mơ gặp Bác Hồ',
     creator: 'Xuân Giao',
-    performer: 'Hoài Anh',
+    performer: 'Candy Ngọc Hà',
     context:
       'Ca khúc thiếu nhi giàu hình ảnh, có thể dùng trong hoạt động nghe nhạc - trả lời câu hỏi cho học sinh, sinh viên.',
     theme: 'Thiếu nhi',
-    audioStatus: 'placeholder',
+    youtubeId: 'qB3nnq8fEAU',
   },
   {
-    order: 9,
+    order: 8,
     title: 'Miền Trung nhớ Bác',
     creator: 'Phạm Minh Tuấn',
-    performer: 'Thu Hiền',
+    performer: 'NSND Thu Hiền',
     context:
       'Gợi tình cảm của đồng bào miền Trung với Bác, có thể kết nối với quê hương Nghệ An và hành trình tuổi trẻ của Người.',
     theme: 'Quê hương và tình cảm nhân dân',
-    audioStatus: 'placeholder',
+    youtubeId: 'msowOeJ8i50',
   },
   {
-    order: 10,
+    order: 9,
     title: 'Dấu chân phía trước',
     creator: 'Phạm Minh Tuấn',
     performer: 'Vũ Thắng Lợi',
     context:
       'Ca khúc phù hợp với chủ đề thanh niên tiếp bước, dấn thân và tự rèn luyện theo lý tưởng của Bác.',
     theme: 'Lý tưởng thanh niên',
-    audioStatus: 'placeholder',
-  },
-  {
-    order: 11,
-    title: 'Minigame Đố vui nhớ Bác',
-    creator: 'Hoạt động tương tác',
-    performer: 'Người xem tham gia',
-    context:
-      'Có thể dùng 5-7 câu hỏi ngắn sau phần nghe nhạc: đoán tên bài, tác giả, chủ đề và mốc lịch sử liên quan.',
-    theme: 'Tương tác',
-    audioStatus: 'placeholder',
+    youtubeId: 'F8dkIxK8Sq4',
   },
 ];
 
@@ -891,6 +871,43 @@ const monumentTabs = [
 
 function getYearLabel(year?: number) {
   return year ? String(year) : 'Đang cập nhật';
+}
+
+function YouTubeEmbedPlaceholder({ song }: { song: Song }) {
+  if (song.youtubeId) {
+    return (
+      <iframe
+        className="-mx-5 -mt-5 mb-5 aspect-video w-[calc(100%+2.5rem)] rounded-t-xl border-0"
+        src={`https://www.youtube.com/embed/${song.youtubeId}`}
+        title={song.title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    );
+  }
+
+  return (
+    <div className="-mx-5 -mt-5 mb-5 aspect-video rounded-t-xl bg-gradient-to-br from-red-formal/10 via-lotus-pale to-ivory p-5">
+      <div className="flex h-full flex-col items-center justify-center text-center">
+        <span className="flex h-14 w-14 items-center justify-center rounded-full bg-red-formal text-white shadow-sm">
+          <svg
+            viewBox="0 0 24 24"
+            className="ml-1 h-7 w-7"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </span>
+        <p className="mt-4 text-sm font-semibold text-ink">
+          Video đang cập nhật
+        </p>
+        <p className="mt-2 max-w-xs text-xs leading-5 text-gray-sub">
+          Nội dung video cho bài “{song.title}” sẽ được bổ sung sau.
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default function HomePage() {
@@ -1437,17 +1454,12 @@ export default function HomePage() {
           <SectionTitle
             id="am-nhac"
             title="Âm nhạc về Chủ tịch Hồ Chí Minh"
-            subtitle="Danh mục bài hát nên được triển khai bằng thẻ nghe thử hoặc liên kết video hợp lệ, không tự chép lời bài hát."
+            subtitle="Những ca khúc tiêu biểu về Chủ tịch Hồ Chí Minh, được chọn để gợi cảm xúc, bối cảnh lịch sử và tinh thần học tập, làm theo Bác."
           />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {songs.map((song) => (
               <Card key={song.order} className="p-5">
-                <ImagePlaceholder
-                  path={`/assets/images/music/ca-khuc-${String(song.order).padStart(2, '0')}.jpg`}
-                  alt={`Ảnh minh họa hoặc thumbnail ca khúc: ${song.title}`}
-                  aspectRatio="16/10"
-                  className="-mx-5 -mt-5 mb-5 rounded-b-none"
-                />
+                <YouTubeEmbedPlaceholder song={song} />
                 <p className="font-heading text-3xl font-bold text-lotus-pink/50">
                   {String(song.order).padStart(2, '0')}
                 </p>
@@ -1463,7 +1475,7 @@ export default function HomePage() {
                   </p>
                 )}
                 <p className="mt-1 text-sm text-gray-sub">
-                  Trình bày gợi ý:{' '}
+                  Trình bày:{' '}
                   <span className="text-ink">{song.performer}</span>
                 </p>
                 {song.theme && (
@@ -1476,10 +1488,6 @@ export default function HomePage() {
                     {song.context}
                   </p>
                 )}
-                <p className="mt-4 rounded-lg bg-lotus-light px-3 py-2 text-xs text-gray-sub">
-                  Khu vực media sẽ gắn audio/video hợp lệ trong thư mục
-                  /assets/audio khi có tài nguyên chính thức.
-                </p>
               </Card>
             ))}
           </div>

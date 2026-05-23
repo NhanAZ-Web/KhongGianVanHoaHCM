@@ -45,19 +45,25 @@
 
 ## 5. Âm nhạc
 
-Ưu tiên thumbnail video chính thống, ảnh biểu diễn, ảnh bìa playlist hoặc ảnh minh họa theo chủ đề. Không cần chép lời bài hát vào ảnh.
+Mục âm nhạc chuyển sang embed YouTube nên không cần chuẩn bị ảnh preview hay audio riêng. YouTube sẽ tự cung cấp player và thumbnail.
 
-- `/assets/images/music/ca-khuc-01.jpg` - Mùa xuân trên Thành phố Hồ Chí Minh.
-- `/assets/images/music/ca-khuc-02.jpg` - Ai yêu Bác Hồ Chí Minh hơn thiếu niên nhi đồng.
-- `/assets/images/music/ca-khuc-03.jpg` - Tuổi trẻ thế hệ Bác Hồ.
-- `/assets/images/music/ca-khuc-04.jpg` - Như có Bác Hồ trong ngày vui đại thắng.
-- `/assets/images/music/ca-khuc-05.jpg` - Bác đang cùng chúng cháu hành quân.
-- `/assets/images/music/ca-khuc-06.jpg` - Ca ngợi Hồ Chủ tịch.
-- `/assets/images/music/ca-khuc-07.jpg` - Viếng lăng Bác.
-- `/assets/images/music/ca-khuc-08.jpg` - Đêm qua em mơ gặp Bác Hồ.
-- `/assets/images/music/ca-khuc-09.jpg` - Miền Trung nhớ Bác.
-- `/assets/images/music/ca-khuc-10.jpg` - Dấu chân phía trước.
-- `/assets/images/music/ca-khuc-11.jpg` - Minigame Đố vui nhớ Bác.
+Việc cần làm sau:
+
+- Chọn video YouTube phù hợp, ưu tiên kênh chính thống hoặc nguồn có độ tin cậy.
+- Lấy mã video sau `watch?v=` hoặc sau `youtu.be/`.
+- Điền mã đó vào trường `youtubeId` của từng ca khúc trong `src/pages/HomePage.tsx`.
+
+Danh sách `youtubeId` đã gắn:
+
+- `_B-GCQuH6O0` - Ai yêu Bác Hồ Chí Minh hơn thiếu niên nhi đồng.
+- `ZpCjyf99fq0` - Tuổi trẻ thế hệ Bác Hồ.
+- `HFSCN9RadB8` - Như có Bác Hồ trong ngày vui đại thắng.
+- `6ZLlLhHRg48` - Bác đang cùng chúng cháu hành quân.
+- `ING9CrBNSls` - Ca ngợi Hồ Chủ tịch.
+- `UDE84LYR_vw` - Viếng lăng Bác.
+- `qB3nnq8fEAU` - Đêm qua em mơ gặp Bác Hồ.
+- `msowOeJ8i50` - Miền Trung nhớ Bác.
+- `F8dkIxK8Sq4` - Dấu chân phía trước.
 
 ## 6. Tượng đài và không gian tưởng niệm
 
