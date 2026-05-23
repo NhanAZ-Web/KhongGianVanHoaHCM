@@ -721,7 +721,7 @@ const roleModelActivities = [
     title: 'Tháng Thanh niên 2026 - Chủ nhật xanh',
     year: '2026',
     description:
-      'Có thể đặt trong nhóm hoạt động tình nguyện, môi trường, xây dựng nếp sống đẹp; liên hệ với tinh thần lao động, trách nhiệm cộng đồng và làm việc thiết thực.',
+      'Hoạt động tình nguyện, môi trường và xây dựng nếp sống đẹp thể hiện tinh thần lao động, trách nhiệm cộng đồng và cách làm việc thiết thực của tuổi trẻ CTIM.',
     imagePath: '/assets/images/role-models/chu-nhat-xanh-2026.jpg',
   },
   {
@@ -735,14 +735,14 @@ const roleModelActivities = [
     title: 'Chiến dịch Xuân tình nguyện 2026',
     year: '2026',
     description:
-      'Các hoạt động văn nghệ mừng Đảng - mừng Xuân, tổng kết chiến dịch và lan tỏa yêu thương có thể trở thành tư liệu sống cho phần “làm theo Bác”.',
+      'Các hoạt động mừng Đảng - mừng Xuân và lan tỏa yêu thương góp phần đưa tinh thần học tập, làm theo Bác vào những việc làm gần gũi, thiết thực.',
     imagePath: '/assets/images/role-models/xuan-tinh-nguyen-2026.jpg',
   },
   {
     title: 'Ra mắt Ban Chấp hành Đoàn TNCS Hồ Chí Minh Trường Cao đẳng CTIM, nhiệm kỳ 2025 - 2027',
     year: '2025-2027',
     description:
-      'Nên dùng để giới thiệu lực lượng nòng cốt dẫn dắt phong trào thanh niên CTIM, đồng hành với đoàn viên trong học tập, rèn luyện và phát triển bản sắc sinh viên CTIM.',
+      'Ban Chấp hành Đoàn trường là lực lượng nòng cốt dẫn dắt phong trào thanh niên CTIM, đồng hành với đoàn viên trong học tập, rèn luyện và phát triển bản sắc sinh viên CTIM.',
     imagePath: '/assets/images/role-models/bch-doan-ctim-2025-2027.jpg',
   },
   {

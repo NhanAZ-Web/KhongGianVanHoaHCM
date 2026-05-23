@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nhanaz-web.github.io/KhongGianVanHoaHCM/sitemap.xml

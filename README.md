@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Không gian Văn hóa Hồ Chí Minh
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website tĩnh giới thiệu cuộc đời, sự nghiệp, tư tưởng, đạo đức, phong cách Hồ Chí Minh; đồng thời kết nối nội dung học tập với hoạt động của Chi bộ và Đoàn TNCS Hồ Chí Minh Trường Cao đẳng bán công Công nghệ và Quản trị doanh nghiệp.
 
-Currently, two official plugins are available:
+Trang được thiết kế để triển khai trên GitHub Pages, ưu tiên giao diện tối giản, trang trọng, responsive và dễ bổ sung dữ liệu hình ảnh sau này.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Liên kết
 
-## React Compiler
+- Website: https://nhanaz-web.github.io/KhongGianVanHoaHCM/
+- Repository: https://github.com/NhanAZ-Web/KhongGianVanHoaHCM
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Nội dung chính
 
-## Expanding the ESLint configuration
+- Trang chủ giới thiệu không gian văn hóa và đơn vị thực hiện.
+- Hồ sơ Chủ tịch Hồ Chí Minh.
+- Timeline cuộc đời và sự nghiệp theo giai đoạn.
+- Các chặng đời, tư tưởng, đạo đức, phong cách.
+- Tác phẩm và tư liệu tiêu biểu.
+- Âm nhạc về Chủ tịch Hồ Chí Minh qua embed YouTube.
+- Tượng đài và không gian tưởng niệm trên thế giới.
+- Câu chuyện về Bác và câu hỏi suy ngẫm.
+- Gương sáng, hoạt động của đơn vị CTIM.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Công nghệ
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- GitHub Pages
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Chạy local
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Kiểm tra trước khi deploy
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run lint
+npm run build
 ```
+
+## Deploy
+
+Project dùng GitHub Actions trong `.github/workflows/deploy.yml`. Sau khi push lên nhánh `master`, workflow sẽ build project và triển khai thư mục `dist` lên GitHub Pages.
+
+## Ghi chú nội dung
+
+Nội dung và hình ảnh trên website phục vụ mục đích tham khảo, học tập; không dùng làm nguồn trích dẫn hoặc căn cứ chính thức. Khi xuất bản chính thức, cần kiểm chứng lại dữ liệu lịch sử, nguồn ảnh, nguồn video và các tư liệu trích dẫn với nguồn chính thống.
