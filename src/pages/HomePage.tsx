@@ -6,9 +6,7 @@ import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import Modal from '../components/ui/Modal';
 import SearchBar from '../components/ui/SearchBar';
 import SectionTitle from '../components/ui/SectionTitle';
-import CloudPattern from '../components/patterns/CloudPattern';
 import DrumPattern from '../components/patterns/DrumPattern';
-import LotusWatermark from '../components/patterns/LotusWatermark';
 import SilkDivider from '../components/patterns/SilkDivider';
 import { lifeCareerItems } from '../data/life-career';
 import { personProfile } from '../data/person-profile';
@@ -952,12 +950,8 @@ export default function HomePage() {
     <>
       <section
         id="hero"
-        className="relative min-h-screen overflow-hidden pt-28 pb-16 md:pt-32 md:pb-20"
+        className="relative min-h-screen overflow-hidden bg-gradient-to-br from-lotus-pale via-lotus-light/75 to-white pt-28 pb-16 md:pt-32 md:pb-20"
       >
-        <CloudPattern className="absolute inset-0" />
-        <DrumPattern className="absolute -right-24 top-24 h-80 w-80 md:h-[30rem] md:w-[30rem]" opacity={0.05} />
-        <LotusWatermark className="absolute -left-12 bottom-12 h-56 w-56 md:h-80 md:w-80" opacity={0.06} />
-
         <div className="section-container relative z-10 grid min-h-[calc(100vh-8rem)] items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <Badge variant="red">Không gian số học tập và lan tỏa</Badge>
