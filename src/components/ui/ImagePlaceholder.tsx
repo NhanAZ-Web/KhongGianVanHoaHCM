@@ -42,13 +42,18 @@ export default function ImagePlaceholder({
       aria-label={alt}
     >
       {!hasError ? (
-        <img
-          src={resolvedPath}
-          alt={alt}
-          className="h-full w-full object-cover"
-          loading="lazy"
-          onError={() => setFailedPath(resolvedPath)}
-        />
+        <>
+          <img
+            src={resolvedPath}
+            alt={alt}
+            className="h-full w-full object-cover"
+            loading="lazy"
+            onError={() => setFailedPath(resolvedPath)}
+          />
+          <span className="pointer-events-none absolute bottom-2 right-2 rounded bg-ink/25 px-2 py-0.5 text-[10px] font-medium leading-none text-white/70 shadow-sm backdrop-blur-[1px]">
+            Ảnh minh họa
+          </span>
+        </>
       ) : (
         <>
           <svg

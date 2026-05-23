@@ -797,6 +797,42 @@ const timelineTabs = timelineData.map((period) => ({
   label: period.periodTitle,
 }));
 
+const timelineImageByDate: Record<string, string> = {
+  '1890-05-19': '/assets/images/timeline/1890-lang-sen-kim-lien.jpg',
+  '1911-06-03': '/assets/images/timeline/1911-nhan-the-tau-van-ba.jpg',
+  '1911-06-05': '/assets/images/timeline/1911-cang-nha-rong-ra-di-tim-duong-cuu-nuoc.jpg',
+  '1912/1917': '/assets/images/timeline/1912-1917-hanh-trinh-bon-ba-the-gioi.jpg',
+  '1917': '/assets/images/timeline/1917-nguyen-ai-quoc-tai-phap.jpg',
+  '1919': '/assets/images/timeline/1919-ban-yeu-sach-nhan-dan-an-nam.jpg',
+  '1920-12': '/assets/images/timeline/1920-dai-hoi-tours.jpg',
+  '1921/1922': '/assets/images/timeline/1921-bao-nguoi-cung-kho.jpg',
+  '1923-06': '/assets/images/timeline/1923-nguyen-ai-quoc-tai-lien-xo.jpg',
+  '1924-11': '/assets/images/timeline/1924-nguyen-ai-quoc-tai-quang-chau.jpg',
+  '1925': '/assets/images/timeline/1925-hoi-viet-nam-cach-mang-thanh-nien.jpg',
+  '1930-02': '/assets/images/timeline/1930-hoi-nghi-thanh-lap-dang.jpg',
+  '1931/1933': '/assets/images/timeline/1931-1933-nguyen-ai-quoc-tai-hong-kong.jpg',
+  '1941-01-28': '/assets/images/timeline/1941-pac-bo-cao-bang.jpg',
+  '1941-05': '/assets/images/timeline/1941-hoi-nghi-trung-uong-8-viet-minh.jpg',
+  '1942/1943': '/assets/images/timeline/1942-1943-nhat-ky-trong-tu.jpg',
+  '1944-12': '/assets/images/timeline/1944-doi-viet-nam-tuyen-truyen-giai-phong-quan.jpg',
+  '1945-09-02': '/assets/images/timeline/1945-doc-tuyen-ngon-doc-lap-ba-dinh.jpg',
+  '1946-12-19': '/assets/images/timeline/1946-loi-keu-goi-toan-quoc-khang-chien.jpg',
+  '1951': '/assets/images/timeline/1951-dai-hoi-dang-lan-2.jpg',
+  '1954-05-07': '/assets/images/timeline/1954-chien-thang-dien-bien-phu.jpg',
+  '1956-10': '/assets/images/timeline/1956-chu-tich-dang.jpg',
+  '1960': '/assets/images/timeline/1960-dai-hoi-dang-lan-3.jpg',
+  '1969-09-02': '/assets/images/timeline/1969-di-chuc-ho-chi-minh.jpg',
+  '1975': '/assets/images/timeline/1975-chien-dich-ho-chi-minh.jpg',
+  '1987/1990': '/assets/images/timeline/1987-1990-unesco-ton-vinh-ho-chi-minh.jpg',
+};
+
+function getTimelineImagePath(date: string) {
+  return (
+    timelineImageByDate[date] ??
+    `/assets/images/timeline/${date.replace(/[^0-9a-z]+/gi, '-')}.jpg`
+  );
+}
+
 const workTabs = [
   { id: 'all', label: 'Tất cả' },
   { id: 'van-kien', label: 'Văn kiện' },
@@ -1171,6 +1207,7 @@ export default function HomePage() {
                     <div className="space-y-6 md:space-y-8">
                       {period.events.map((event, eventIndex) => {
                         const isLeft = eventIndex % 2 === 0;
+                        const eventImagePath = getTimelineImagePath(event.date);
 
                         return (
                           <article
@@ -1210,6 +1247,21 @@ export default function HomePage() {
                                 </p>
                               )}
                             </Card>
+
+                            <div
+                              className={`hidden md:row-start-1 md:block ${
+                                isLeft ? 'md:col-start-3' : 'md:col-start-1'
+                              }`}
+                            >
+                              <div className="group relative overflow-hidden rounded-2xl border border-lotus-pink/15 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:border-lotus-pink/35 hover:shadow-lg">
+                                <ImagePlaceholder
+                                  path={eventImagePath}
+                                  alt={`Ảnh minh họa: ${event.title}`}
+                                  aspectRatio="16/10"
+                                  className="rounded-xl"
+                                />
+                              </div>
+                            </div>
                           </article>
                         );
                       })}

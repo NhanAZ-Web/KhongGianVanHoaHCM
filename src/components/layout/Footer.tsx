@@ -53,7 +53,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Column 1: Info */}
           <div>
-            <h3 className="font-heading font-bold text-lg text-white mb-4">
+            <h3 className="font-heading font-bold text-lg leading-tight text-white mb-0 pb-4">
               Không gian Văn hóa Hồ Chí Minh
             </h3>
             <p className="text-sm leading-relaxed text-white/60 mb-2">
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Column 2: Organization */}
           <div>
-            <h3 className="font-heading font-bold text-lg text-white mb-4">
+            <h3 className="font-heading font-bold text-lg leading-tight text-white mb-0 pb-4">
               Đơn vị thực hiện
             </h3>
             <div className="space-y-3 text-sm leading-relaxed text-white/60">
@@ -91,7 +91,7 @@ export default function Footer() {
 
           {/* Column 3: Quick links */}
           <div>
-            <h3 className="font-heading font-bold text-lg text-white mb-4">
+            <h3 className="font-heading font-bold text-lg leading-tight text-white mb-0 pb-4">
               Điều hướng nhanh
             </h3>
             <nav className="flex flex-col gap-2">
@@ -120,7 +120,7 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
             Nội dung mang tính chất tham khảo và giáo dục.
-            Cần kiểm chứng nguồn trước khi xuất bản chính thức.
+            Cần kiểm chứng thông tin trước khi xuất bản chính thức.
           </p>
           <p className="text-xs text-white/40">
             {new Date().getFullYear()}

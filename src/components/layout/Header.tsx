@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const navItems = [
   { id: 'hero', label: 'Trang chủ' },
@@ -55,8 +55,6 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('hero')
-  const pendingSectionRef = useRef<string | null>(null)
-  const pendingTimerRef = useRef<number | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,31 +65,21 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
-    const getHeaderOffset = () => (window.innerWidth >= 768 ? 104 : 88)
+    const getActivationLine = () => (window.innerWidth >= 768 ? 320 : 180)
 
     const handleActiveSection = () => {
-      const headerOffset = getHeaderOffset()
-      const pendingSection = pendingSectionRef.current
-
-      if (pendingSection) {
-        const pendingElement = document.getElementById(pendingSection)
-        const pendingDistance = pendingElement
-          ? Math.abs(pendingElement.getBoundingClientRect().top - headerOffset)
-          : 0
-
-        if (pendingDistance > 18) {
-          return
-        }
-
-        pendingSectionRef.current = null
-      }
-
-      const readingLine = window.scrollY + headerOffset
+      const activationLine = getActivationLine()
       let currentSection = navItems[0].id
+      let closestPassedTop = Number.NEGATIVE_INFINITY
 
       navItems.forEach((item) => {
         const section = document.getElementById(item.id)
-        if (section && section.offsetTop <= readingLine) {
+        if (!section) return
+
+        const sectionTop = section.getBoundingClientRect().top
+
+        if (sectionTop <= activationLine && sectionTop > closestPassedTop) {
+          closestPassedTop = sectionTop
           currentSection = item.id
         }
       })
@@ -106,14 +94,20 @@ export default function Header() {
       window.cancelAnimationFrame(frameId)
       frameId = window.requestAnimationFrame(handleActiveSection)
     }
+    const stabilityChecks = [150, 500, 1000].map((delay) =>
+      window.setTimeout(requestActiveSection, delay)
+    )
 
     window.addEventListener('scroll', requestActiveSection, { passive: true })
-    window.addEventListener('resize', handleActiveSection)
+    window.addEventListener('resize', requestActiveSection)
+    window.addEventListener('load', requestActiveSection)
 
     return () => {
       window.cancelAnimationFrame(frameId)
+      stabilityChecks.forEach((timerId) => window.clearTimeout(timerId))
       window.removeEventListener('scroll', requestActiveSection)
-      window.removeEventListener('resize', handleActiveSection)
+      window.removeEventListener('resize', requestActiveSection)
+      window.removeEventListener('load', requestActiveSection)
     }
   }, [])
 
@@ -126,25 +120,6 @@ export default function Header() {
     return () => { document.body.style.overflow = '' }
   }, [isMobileMenuOpen])
 
-  useEffect(() => {
-    const clearPendingSection = () => {
-      pendingSectionRef.current = null
-      if (pendingTimerRef.current) {
-        window.clearTimeout(pendingTimerRef.current)
-        pendingTimerRef.current = null
-      }
-    }
-
-    window.addEventListener('wheel', clearPendingSection, { passive: true })
-    window.addEventListener('touchstart', clearPendingSection, { passive: true })
-
-    return () => {
-      clearPendingSection()
-      window.removeEventListener('wheel', clearPendingSection)
-      window.removeEventListener('touchstart', clearPendingSection)
-    }
-  }, [])
-
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id)
     if (el) {
@@ -153,14 +128,6 @@ export default function Header() {
         0,
         window.scrollY + el.getBoundingClientRect().top - headerOffset
       )
-
-      pendingSectionRef.current = id
-      if (pendingTimerRef.current) {
-        window.clearTimeout(pendingTimerRef.current)
-      }
-      pendingTimerRef.current = window.setTimeout(() => {
-        pendingSectionRef.current = null
-      }, 1200)
 
       setActiveSection(id)
       window.scrollTo({ top: targetTop, behavior: 'smooth' })
