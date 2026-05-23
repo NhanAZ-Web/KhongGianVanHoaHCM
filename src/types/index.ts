@@ -81,8 +81,6 @@ export interface Monument {
   city?: string;
   year?: string;
   imagePath: string;
-  note: string;
-  culturalNote?: string;
 }
 
 export interface Story {

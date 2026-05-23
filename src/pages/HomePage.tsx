@@ -545,9 +545,6 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Âu',
     city: 'Moscow',
     imagePath: '/assets/images/monuments/russia-moscow.jpg',
-    note: 'Không gian tưởng niệm tại Nga cho thấy dấu ấn của Hồ Chí Minh trong quan hệ hữu nghị Việt Nam - Liên Xô trước đây và Việt Nam - Nga ngày nay.',
-    culturalNote:
-      'Có thể triển khai thành thẻ “tình hữu nghị quốc tế” gắn với thời gian Người học tập, hoạt động tại Liên Xô.',
   },
   {
     id: 'france-montreuil',
@@ -556,9 +553,6 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Âu',
     city: 'Montreuil',
     imagePath: '/assets/images/monuments/france-montreuil.jpg',
-    note: 'Pháp là nơi Nguyễn Ái Quốc hoạt động chính trị, viết báo và đưa tiếng nói của nhân dân Việt Nam ra quốc tế.',
-    culturalNote:
-      'Nên liên kết với mốc 1919, báo Người cùng khổ và Hội Liên hiệp các dân tộc thuộc địa.',
   },
   {
     id: 'cuba-havana',
@@ -567,9 +561,6 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Mỹ',
     city: 'La Habana',
     imagePath: '/assets/images/monuments/cuba-havana.jpg',
-    note: 'Phù hợp để giới thiệu tình hữu nghị Việt Nam - Cuba và sự kính trọng quốc tế dành cho Chủ tịch Hồ Chí Minh.',
-    culturalNote:
-      'Có thể trình bày cùng các câu chuyện đoàn kết quốc tế, tinh thần độc lập dân tộc và chủ nghĩa nhân văn.',
   },
   {
     id: 'mexico-mexico-city',
@@ -578,9 +569,6 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Mỹ',
     city: 'Mexico City',
     imagePath: '/assets/images/monuments/mexico-mexico-city.jpg',
-    note: 'Mexico là một điểm trong mạng lưới không gian tưởng niệm Hồ Chí Minh tại Mỹ Latinh, phản ánh sự đồng cảm với các dân tộc đấu tranh vì độc lập.',
-    culturalNote:
-      'Khi có ảnh thật, nên bổ sung tên công viên hoặc quảng trường để người xem tra cứu tiếp.',
   },
   {
     id: 'india-kolkata',
@@ -589,9 +577,6 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Á',
     city: 'Kolkata',
     imagePath: '/assets/images/monuments/india-kolkata.jpg',
-    note: 'Có thể dùng để mở rộng chủ đề Chủ tịch Hồ Chí Minh trong tình đoàn kết Á - Phi.',
-    culturalNote:
-      'Phù hợp đặt trong nhóm nội dung về phong trào giải phóng dân tộc và tình hữu nghị châu Á.',
   },
   {
     id: 'madagascar-antananarivo',
@@ -600,9 +585,6 @@ const monuments: Monument[] = [
     regionLabel: 'Châu Phi',
     city: 'Antananarivo',
     imagePath: '/assets/images/monuments/madagascar-antananarivo.jpg',
-    note: 'Sự hiện diện của tên tuổi Hồ Chí Minh tại châu Phi gợi mở chủ đề về ảnh hưởng của cách mạng Việt Nam đối với các dân tộc bị áp bức.',
-    culturalNote:
-      'Nên dùng thẻ này để giải thích vì sao Hồ Chí Minh được nhìn nhận như biểu tượng của giải phóng dân tộc.',
   },
   {
     id: 'thailand',
@@ -610,9 +592,6 @@ const monuments: Monument[] = [
     region: 'chau-a',
     regionLabel: 'Châu Á',
     imagePath: '/assets/images/monuments/thailand.jpg',
-    note: 'Thái Lan gắn với thời gian Nguyễn Ái Quốc hoạt động trong cộng đồng Việt kiều, xây dựng cơ sở cách mạng và vận động quần chúng.',
-    culturalNote:
-      'Có thể phát triển thành một điểm trên bản đồ hành trình cứu nước ở Đông Nam Á.',
   },
   {
     id: 'china',
@@ -620,9 +599,6 @@ const monuments: Monument[] = [
     region: 'chau-a',
     regionLabel: 'Châu Á',
     imagePath: '/assets/images/monuments/china.jpg',
-    note: 'Trung Quốc là địa bàn quan trọng trong quá trình đào tạo cán bộ, thành lập tổ chức cách mạng và hoạt động trước năm 1945.',
-    culturalNote:
-      'Nên liên kết với Quảng Châu, Hội Việt Nam Cách mạng Thanh niên và mốc thành lập Đảng.',
   },
   {
     id: 'japan',
@@ -630,9 +606,6 @@ const monuments: Monument[] = [
     region: 'chau-a',
     regionLabel: 'Châu Á',
     imagePath: '/assets/images/monuments/japan.jpg',
-    note: 'Nhật Bản có thể được đưa vào nhóm không gian tưởng niệm tại châu Á, giúp mở rộng bản đồ di sản quốc tế.',
-    culturalNote:
-      'Khi bổ sung dữ liệu thật, nên ghi rõ địa phương, loại công trình và năm đặt tượng/kỷ niệm.',
   },
   {
     id: 'sri-lanka',
@@ -640,9 +613,6 @@ const monuments: Monument[] = [
     region: 'chau-a',
     regionLabel: 'Châu Á',
     imagePath: '/assets/images/monuments/sri-lanka.jpg',
-    note: 'Sri Lanka giúp hoàn thiện góc nhìn về sự lan tỏa hình ảnh Hồ Chí Minh trong khu vực Nam Á.',
-    culturalNote:
-      'Có thể đặt cạnh Ấn Độ trong cụm nội dung “tình hữu nghị châu Á”.',
   },
   {
     id: 'hungary',
@@ -650,9 +620,6 @@ const monuments: Monument[] = [
     region: 'chau-au',
     regionLabel: 'Châu Âu',
     imagePath: '/assets/images/monuments/hungary.jpg',
-    note: 'Hungary là một điểm tham khảo trong hệ thống không gian tưởng niệm Hồ Chí Minh tại châu Âu.',
-    culturalNote:
-      'Nên dùng để cho thấy sự trân trọng của bạn bè quốc tế đối với Việt Nam và Chủ tịch Hồ Chí Minh.',
   },
   {
     id: 'slovakia',
@@ -660,9 +627,6 @@ const monuments: Monument[] = [
     region: 'chau-au',
     regionLabel: 'Châu Âu',
     imagePath: '/assets/images/monuments/slovakia.jpg',
-    note: 'Slovakia có thể được trình bày trong cụm các quốc gia châu Âu có công trình hoặc địa điểm mang dấu ấn Hồ Chí Minh.',
-    culturalNote:
-      'Khi có dữ liệu ảnh, nên bổ sung chú thích ngắn về vị trí và ý nghĩa ngoại giao văn hóa.',
   },
   {
     id: 'uk',
@@ -670,9 +634,6 @@ const monuments: Monument[] = [
     region: 'chau-au',
     regionLabel: 'Châu Âu',
     imagePath: '/assets/images/monuments/uk.jpg',
-    note: 'Anh gắn với một chặng trong hành trình lao động và tìm hiểu thế giới của Nguyễn Tất Thành trước khi trở lại Pháp.',
-    culturalNote:
-      'Có thể liên kết với chủ đề tự học, lao động và quan sát đời sống công nhân quốc tế.',
   },
   {
     id: 'argentina',
@@ -680,9 +641,6 @@ const monuments: Monument[] = [
     region: 'chau-my',
     regionLabel: 'Châu Mỹ',
     imagePath: '/assets/images/monuments/argentina.jpg',
-    note: 'Argentina mở rộng bản đồ di sản Hồ Chí Minh tại khu vực Mỹ Latinh, nơi các giá trị độc lập dân tộc và công bằng xã hội có sức cộng hưởng lớn.',
-    culturalNote:
-      'Nên đặt trong cụm “Mỹ Latinh với Hồ Chí Minh”.',
   },
   {
     id: 'chile',
@@ -690,9 +648,6 @@ const monuments: Monument[] = [
     region: 'chau-my',
     regionLabel: 'Châu Mỹ',
     imagePath: '/assets/images/monuments/chile.jpg',
-    note: 'Chile là một điểm giúp kể câu chuyện về sự lan tỏa của hình tượng Hồ Chí Minh trong phong trào tiến bộ quốc tế.',
-    culturalNote:
-      'Có thể dùng để mở câu chuyện về sự ủng hộ quốc tế dành cho Việt Nam.',
   },
   {
     id: 'usa',
@@ -700,9 +655,6 @@ const monuments: Monument[] = [
     region: 'chau-my',
     regionLabel: 'Châu Mỹ',
     imagePath: '/assets/images/monuments/usa.jpg',
-    note: 'Hoa Kỳ có thể được giới thiệu trong hành trình bôn ba tìm đường cứu nước, khi Người từng trải nghiệm đời sống lao động ở nhiều nơi trên thế giới.',
-    culturalNote:
-      'Nên viết thận trọng, tách rõ dữ liệu hành trình lịch sử và dữ liệu công trình tưởng niệm.',
   },
   {
     id: 'algeria',
@@ -710,9 +662,6 @@ const monuments: Monument[] = [
     region: 'chau-phi',
     regionLabel: 'Châu Phi',
     imagePath: '/assets/images/monuments/algeria.jpg',
-    note: 'Algeria phù hợp với chủ đề đoàn kết giữa các dân tộc từng đấu tranh chống chủ nghĩa thực dân.',
-    culturalNote:
-      'Có thể liên hệ với tư tưởng giải phóng dân tộc và tinh thần quốc tế trong sáng.',
   },
   {
     id: 'angola',
@@ -720,9 +669,6 @@ const monuments: Monument[] = [
     region: 'chau-phi',
     regionLabel: 'Châu Phi',
     imagePath: '/assets/images/monuments/angola.jpg',
-    note: 'Angola giúp làm rõ ảnh hưởng biểu tượng của Hồ Chí Minh đối với các phong trào độc lập tại châu Phi.',
-    culturalNote:
-      'Nên bổ sung dữ liệu địa điểm cụ thể khi có nguồn ảnh/tài liệu.',
   },
 ];
 
@@ -1552,7 +1498,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between gap-3">
                   <Badge variant="gold">{monument.regionLabel}</Badge>
                   {monument.city && (
-                    <span className="text-xs text-gray-sub">
+                    <span className="text-sm font-medium text-gray-sub">
                       {monument.city}
                     </span>
                   )}
@@ -1560,14 +1506,6 @@ export default function HomePage() {
                 <h3 className="mt-3 font-heading text-xl font-bold">
                   {monument.country}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-gray-sub">
-                  {monument.note}
-                </p>
-                {monument.culturalNote && (
-                  <p className="mt-3 rounded-lg bg-lotus-light px-3 py-2 text-xs leading-6 text-gray-sub">
-                    {monument.culturalNote}
-                  </p>
-                )}
               </div>
             </Card>
           ))}
