@@ -144,7 +144,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 z-50 w-screen max-w-[100vw] overflow-hidden transition-all duration-300 ${
           isScrolled
             ? 'bg-ivory/95 backdrop-blur-md shadow-sm'
             : 'bg-transparent'
@@ -198,7 +198,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-ink hover:bg-lotus-light rounded-lg transition-colors"
+            className="absolute right-4 top-3 z-[60] rounded-lg p-2 text-ink transition-colors hover:bg-lotus-light md:top-5 lg:hidden"
             aria-label={isMobileMenuOpen ? 'Đóng menu' : 'Mở menu'}
           >
             {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}

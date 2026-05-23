@@ -924,20 +924,22 @@ export default function HomePage() {
     <>
       <section
         id="hero"
-        className="relative min-h-screen overflow-hidden bg-gradient-to-br from-lotus-pale via-lotus-light/75 to-white pt-28 pb-16 md:pt-32 md:pb-20"
+        className="relative overflow-hidden bg-gradient-to-br from-lotus-pale via-lotus-light/75 to-white pt-24 pb-14 md:pt-32 md:pb-20 lg:min-h-screen"
       >
-        <div className="section-container relative z-10 grid min-h-[calc(100vh-8rem)] items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="section-container relative z-10 grid gap-10 lg:min-h-[calc(100vh-8rem)] lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <Badge variant="red">Không gian số học tập và lan tỏa</Badge>
             <h1
-              className="hero-gradient-title mt-5 max-w-4xl font-heading text-4xl font-black leading-tight md:text-6xl"
+              className="hero-gradient-title mt-5 max-w-4xl font-heading text-[2rem] font-black leading-tight sm:text-4xl md:text-6xl"
               aria-label="Không gian Văn hóa Hồ Chí Minh"
             >
               <span className="hero-gradient-title-stroke" aria-hidden="true">
-                Không gian Văn hóa Hồ Chí Minh
+                <span className="block">Không gian Văn hóa</span>
+                <span className="block">Hồ Chí Minh</span>
               </span>
               <span className="hero-gradient-title-fill" aria-hidden="true">
-                Không gian Văn hóa Hồ Chí Minh
+                <span className="block">Không gian Văn hóa</span>
+                <span className="block">Hồ Chí Minh</span>
               </span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-gray-sub md:text-lg">
@@ -1145,19 +1147,19 @@ export default function HomePage() {
             title="Dòng thời gian cuộc đời và sự nghiệp"
             subtitle="Hành trình từ quê hương Kim Liên, quá trình tìm đường cứu nước, lãnh đạo cách mạng đến những dấu ấn còn tiếp nối trong di sản hôm nay."
           />
-          <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
-            <div className="order-2 space-y-14 lg:order-1">
+          <div className="mt-8 grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
+            <div className="order-2 min-w-0 max-w-full space-y-14 lg:order-1">
               {timelineData.map((period) => (
                 <section
                   key={period.periodId}
                   id={`timeline-${period.periodId}`}
-                  className="scroll-mt-28"
+                  className="min-w-0 scroll-mt-28"
                 >
-                  <div className="mb-8 flex items-center gap-4">
+                  <div className="mb-8 flex min-w-0 items-center gap-4">
                     <span className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-lotus-pink/35 to-lotus-pink/15 md:block" />
-                    <div className="rounded-full border border-lotus-pink/30 bg-ivory px-5 py-2 text-center shadow-sm">
+                    <div className="min-w-0 flex-1 rounded-2xl border border-lotus-pink/30 bg-ivory px-4 py-2 text-center shadow-sm md:flex-none md:rounded-full md:px-5">
                       <Badge variant="pink">{period.periodId}</Badge>
-                      <h3 className="mt-1 font-heading text-lg font-bold md:text-xl">
+                      <h3 className="mt-1 break-words font-heading text-lg font-bold md:text-xl">
                         {period.periodTitle}
                       </h3>
                     </div>
@@ -1174,7 +1176,7 @@ export default function HomePage() {
                         return (
                           <article
                             key={`${period.periodId}-${event.date}-${event.title}`}
-                            className="relative md:grid md:grid-cols-[minmax(0,1fr)_3rem_minmax(0,1fr)] md:gap-4"
+                            className="relative w-full max-w-full md:grid md:grid-cols-[minmax(0,1fr)_3rem_minmax(0,1fr)] md:gap-4"
                           >
                             <div className="absolute left-5 top-5 z-10 -translate-x-1/2 md:left-1/2">
                               <span className="flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-lotus-pink font-heading text-xs font-bold text-white shadow-md">
@@ -1183,7 +1185,7 @@ export default function HomePage() {
                             </div>
 
                             <Card
-                              className={`ml-12 p-5 md:ml-0 ${
+                              className={`ml-12 w-[calc(100%-3rem)] p-5 md:ml-0 md:w-auto ${
                                 isLeft
                                   ? 'md:col-start-1 md:text-right'
                                   : 'md:col-start-3'
@@ -1233,12 +1235,12 @@ export default function HomePage() {
               ))}
             </div>
 
-            <aside className="sticky top-20 z-20 order-1 self-start lg:top-28 lg:order-2">
-              <Card className="border-lotus-pink/20 bg-ivory/95 p-3 shadow-md backdrop-blur" hover={false}>
+            <aside className="sticky top-20 z-20 order-1 min-w-0 max-w-full self-start lg:top-28 lg:order-2">
+              <Card className="min-w-0 max-w-full overflow-hidden border-lotus-pink/20 bg-ivory/95 p-3 shadow-md backdrop-blur" hover={false}>
                 <p className="px-2 pb-2 font-heading text-sm font-bold text-ink">
                   Chọn giai đoạn
                 </p>
-                <div className="flex gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-visible lg:pb-0">
+                <div className="flex min-w-0 max-w-full gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-visible lg:pb-0">
                   {timelineTabs.map((tab) => {
                     const isActive = tab.id === timelineFilter;
 
@@ -1246,7 +1248,7 @@ export default function HomePage() {
                       <button
                         key={tab.id}
                         onClick={() => scrollToTimelinePeriod(tab.id)}
-                        className={`min-w-fit rounded-full px-4 py-2 text-left text-sm font-medium transition lg:w-full lg:rounded-lg ${
+                        className={`shrink-0 rounded-full px-4 py-2 text-left text-sm font-medium transition lg:w-full lg:rounded-lg ${
                           isActive
                             ? 'bg-lotus-pink text-white shadow-sm'
                             : 'bg-white text-gray-sub hover:bg-lotus-pale hover:text-ink'
