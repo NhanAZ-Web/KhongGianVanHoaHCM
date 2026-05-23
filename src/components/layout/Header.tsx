@@ -12,6 +12,8 @@ const navItems = [
   { id: 'cau-chuyen', label: 'Câu chuyện' },
 ]
 
+const observedSectionIds = [...navItems.map((item) => item.id), 'guong-sang']
+
 function MenuIcon() {
   return (
     <svg
@@ -54,7 +56,7 @@ function CloseIcon() {
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState('hero')
+  const [activeSection, setActiveSection] = useState<string | null>('hero')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,20 +74,24 @@ export default function Header() {
       let currentSection = navItems[0].id
       let closestPassedTop = Number.NEGATIVE_INFINITY
 
-      navItems.forEach((item) => {
-        const section = document.getElementById(item.id)
+      observedSectionIds.forEach((sectionId) => {
+        const section = document.getElementById(sectionId)
         if (!section) return
 
         const sectionTop = section.getBoundingClientRect().top
 
         if (sectionTop <= activationLine && sectionTop > closestPassedTop) {
           closestPassedTop = sectionTop
-          currentSection = item.id
+          currentSection = sectionId
         }
       })
 
+      const nextActiveSection = navItems.some((item) => item.id === currentSection)
+        ? currentSection
+        : null
+
       setActiveSection((current) =>
-        current === currentSection ? current : currentSection
+        current === nextActiveSection ? current : nextActiveSection
       )
     }
 

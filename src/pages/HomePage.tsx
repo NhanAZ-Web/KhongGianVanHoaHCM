@@ -6,6 +6,7 @@ import ImagePlaceholder from '../components/ui/ImagePlaceholder';
 import Modal from '../components/ui/Modal';
 import SearchBar from '../components/ui/SearchBar';
 import SectionTitle from '../components/ui/SectionTitle';
+import LotusPetalIcon from '../components/ui/LotusPetalIcon';
 import DrumPattern from '../components/patterns/DrumPattern';
 import SilkDivider from '../components/patterns/SilkDivider';
 import { lifeCareerItems } from '../data/life-career';
@@ -29,43 +30,10 @@ const unitInfo = {
     'Đoàn TNCS Hồ Chí Minh Trường Cao đẳng bán công Công nghệ và Quản trị doanh nghiệp',
 };
 
-function UnitIcon({ type }: { type: 'party' | 'school' | 'youth' }) {
-  const paths = {
-    party: (
-      <>
-        <path d="M12 3.5l1.8 3.65 4.03.58-2.92 2.85.69 4.01L12 12.7l-3.6 1.89.69-4.01-2.92-2.85 4.03-.58L12 3.5z" />
-        <path d="M12 16.5v4" />
-      </>
-    ),
-    school: (
-      <>
-        <path d="M3 9.5L12 5l9 4.5-9 4.5-9-4.5z" />
-        <path d="M6.5 11.25v4.25c1.45 1.2 3.3 1.85 5.5 1.85s4.05-.65 5.5-1.85v-4.25" />
-        <path d="M20 10v5" />
-      </>
-    ),
-    youth: (
-      <>
-        <path d="M12 4c2.2 2.9 4.9 4.5 8 4.8-.35 5.15-3.08 8.92-8 11.2-4.92-2.28-7.65-6.05-8-11.2C7.1 8.5 9.8 6.9 12 4z" />
-        <path d="M9 12.4l2 2 4-4" />
-      </>
-    ),
-  } as const;
-
+function UnitIcon() {
   return (
     <span className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-lotus-pale text-lotus-pink">
-      <svg
-        viewBox="0 0 24 24"
-        className="h-4 w-4"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        {paths[type]}
-      </svg>
+      <LotusPetalIcon className="h-4 w-4" />
     </span>
   );
 }
@@ -242,6 +210,20 @@ const quizQuestions: QuizQuestion[] = [
     explanation:
       'Tự học, học thường xuyên và học từ thực tiễn là cách mỗi người tiếp tục trưởng thành.',
     topic: 'Học tập suốt đời',
+  },
+  {
+    id: 6,
+    question: 'Ngày 02/09/1945 gắn với sự kiện lịch sử nào?',
+    options: [
+      'Nguyễn Tất Thành rời Bến Nhà Rồng',
+      'Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Ba Đình',
+      'Thành lập Hội Việt Nam Cách mạng Thanh niên',
+      'Hoàn thành bản Di chúc',
+    ],
+    correctIndex: 1,
+    explanation:
+      'Ngày 02/09/1945, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, khai sinh nước Việt Nam Dân chủ Cộng hòa.',
+    topic: 'Lịch sử',
   },
 ];
 
@@ -674,19 +656,6 @@ const monuments: Monument[] = [
 
 const stories: Story[] = [
   {
-    id: 'bac-ho-va-nguoi-thay-thuoc',
-    title: 'Bác Hồ và những lời căn dặn đối với người thầy thuốc',
-    summary:
-      'Nhóm câu chuyện và lời căn dặn thể hiện tư tưởng coi người bệnh là trung tâm, đề cao y đức và trách nhiệm phục vụ nhân dân.',
-    topics: ['Y đức', 'Ngành y', 'Phục vụ nhân dân'],
-    lesson:
-      'Người thầy thuốc cần giỏi chuyên môn, giàu lòng nhân ái, biết đoàn kết và luôn đặt sức khỏe, tính mạng của người bệnh lên trên hết.',
-    reflectionQuestion:
-      'Nếu học hoặc làm trong ngành chăm sóc con người, bạn sẽ biến tinh thần “lương y như từ mẫu” thành hành động cụ thể nào?',
-    fullContent:
-      'Phần này có thể triển khai như một trạm đọc ngắn về tư tưởng Hồ Chí Minh đối với y tế: tận tâm với người bệnh, rèn luyện đạo đức nghề nghiệp, chống thái độ vô cảm, xây dựng tinh thần đoàn kết trong tập thể y bác sĩ. Nội dung phù hợp với nhóm câu hỏi về giáo dục, y đức và trách nhiệm xã hội.',
-  },
-  {
     id: 'phai-cham-chi-hoc-tap',
     title: 'Phải chăm chỉ học tập',
     summary:
@@ -782,13 +751,6 @@ const roleModelActivities = [
     description:
       'Tư liệu Chi bộ về kết nạp đảng viên mới giúp kết nối công tác xây dựng Đảng với quá trình bồi dưỡng lý tưởng, rèn luyện bản lĩnh chính trị cho quần chúng ưu tú.',
     imagePath: '/assets/images/role-models/ket-nap-dang-vien-moi.jpg',
-  },
-  {
-    title: 'CTIM dâng hương tưởng niệm Chủ tịch Hồ Chí Minh',
-    year: '19/05',
-    description:
-      'Hoạt động dâng hương nhân dịp kỷ niệm ngày sinh Chủ tịch Hồ Chí Minh là chất liệu trực tiếp cho không gian tưởng niệm, giáo dục truyền thống và tri ân.',
-    imagePath: '/assets/images/role-models/dang-huong-chu-tich-ho-chi-minh.jpg',
   },
 ];
 
@@ -986,15 +948,15 @@ export default function HomePage() {
 
             <div className="mt-7 grid gap-3 text-sm leading-7 text-gray-sub">
               <p className="flex gap-3">
-                <UnitIcon type="party" />
+                <UnitIcon />
                 <span>{unitInfo.party}</span>
               </p>
               <p className="flex gap-3">
-                <UnitIcon type="school" />
+                <UnitIcon />
                 <span>{unitInfo.cell}</span>
               </p>
               <p className="flex gap-3">
-                <UnitIcon type="youth" />
+                <UnitIcon />
                 <span>{unitInfo.implementer}</span>
               </p>
             </div>
@@ -1468,22 +1430,6 @@ export default function HomePage() {
               <p className="mt-3 text-sm leading-7 text-gray-sub">
                 {work.summary}
               </p>
-              {work.focusPoints && (
-                <ul className="mt-4 space-y-2 text-xs leading-6 text-gray-sub">
-                  {work.focusPoints.map((point) => (
-                    <li key={point} className="flex gap-2">
-                      <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-lotus-pink" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <p className="mt-4 text-xs font-medium text-leaf-green">
-                {work.sourceNote ??
-                  (work.hasContent
-                    ? 'Đã có dữ liệu nền để phát triển trang chi tiết.'
-                    : 'Đang chuẩn hóa nội dung.')}
-              </p>
             </Card>
           ))}
         </div>
@@ -1605,7 +1551,7 @@ export default function HomePage() {
                   onClick={() => setSelectedStory(story)}
                   className="mt-5 text-sm font-semibold text-lotus-pink transition hover:text-red-formal"
                 >
-                  Xem bài học và gợi ý triển khai
+                  Xem bài học và câu hỏi
                 </button>
               </Card>
             ))}
@@ -1619,51 +1565,29 @@ export default function HomePage() {
           title="Gương sáng và hoạt động của đơn vị"
           subtitle="Khu vực dành riêng cho Chi bộ và Đoàn trường: cập nhật hoạt động, hình ảnh, sản phẩm học tập và câu chuyện người thật việc thật."
         />
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <Card className="p-6">
-            <Badge variant="red">Dữ liệu nền CTIM</Badge>
-            <h3 className="mt-4 font-heading text-2xl font-bold">
-              Từ không gian tư liệu đến không gian hành động tại CTIM
-            </h3>
-            <p className="mt-4 text-sm leading-7 text-gray-sub">
-              {ctimInfo.shortName} có hệ thống Đảng - Đoàn thể gồm Chi bộ,
-              Công đoàn và Đoàn Thanh niên. Trong đó, Đoàn Thanh niên giữ vai
-              trò tập hợp, đoàn kết, giáo dục đoàn viên, sinh viên; đồng thời
-              tổ chức các phong trào học tập, rèn luyện, tình nguyện và đồng
-              hành với thanh niên trong Nhà trường.
-            </p>
-            <ImagePlaceholder
-              path="/assets/images/ctim/khuon-vien-ctim-tran-van-tra.jpg"
-              alt="Ảnh khuôn viên Trường Cao đẳng CTIM tại đường Trần Văn Trà"
-              aspectRatio="16/10"
-              className="mt-5"
-            />
-            <ul className="mt-5 space-y-3 text-sm leading-7 text-gray-sub">
-              {ctimInfo.youthBodies.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-lotus-pink" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-5 rounded-xl bg-lotus-light p-4">
-              <h4 className="font-heading text-lg font-bold text-ink">
-                Gợi ý kết nối nội dung
-              </h4>
-              <ul className="mt-3 space-y-2 text-sm leading-7 text-gray-sub">
-                {ctimInfo.partyNotes.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+        <div className="grid gap-6">
+          <Card className="p-6 md:p-8">
+            <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+              <div>
+                <h3 className="font-heading text-2xl font-bold">
+                  Từ không gian tư liệu đến không gian hành động tại CTIM
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-gray-sub">
+                  {ctimInfo.shortName} có hệ thống Đảng - Đoàn thể gồm Chi bộ,
+                  Công đoàn và Đoàn Thanh niên. Trong đó, Đoàn Thanh niên giữ vai
+                  trò tập hợp, đoàn kết, giáo dục đoàn viên, sinh viên; đồng thời
+                  tổ chức các phong trào học tập, rèn luyện, tình nguyện và đồng
+                  hành với thanh niên trong Nhà trường.
+                </p>
+              </div>
+              <ImagePlaceholder
+                path="/assets/images/ctim/khuon-vien-ctim-tran-van-tra.jpg"
+                alt="Ảnh khuôn viên Trường Cao đẳng CTIM tại đường Trần Văn Trà"
+                aspectRatio="16/10"
+              />
             </div>
-            <ul className="mt-5 space-y-3 text-sm leading-7 text-gray-sub">
-              <li>Hoạt động học tập chuyên đề của Chi bộ và Đoàn trường.</li>
-              <li>Gương sinh viên, giảng viên, đoàn viên học tập và làm theo Bác.</li>
-              <li>Sản phẩm truyền thông, bài viết, infographic, video ngắn.</li>
-              <li>Album ảnh theo năm học, Tháng Thanh niên và chủ điểm tháng 5.</li>
-            </ul>
           </Card>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {roleModelActivities.map((activity) => (
               <Card key={activity.title} className="overflow-hidden">
                 <ImagePlaceholder
@@ -1694,9 +1618,8 @@ export default function HomePage() {
       >
         {selectedStory && (
           <div className="space-y-5 text-sm leading-7 text-gray-sub">
-            <p>{selectedStory.fullContent}</p>
             <div className="rounded-xl bg-lotus-light p-4">
-              <p className="font-semibold text-ink">Bài học gợi ý</p>
+              <p className="font-semibold text-ink">Bài học</p>
               <p className="mt-2">{selectedStory.lesson}</p>
             </div>
             <div className="rounded-xl bg-leaf-green/10 p-4">

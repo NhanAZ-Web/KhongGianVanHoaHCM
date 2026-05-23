@@ -1,40 +1,9 @@
-function FooterIcon({ type }: { type: 'party' | 'school' | 'youth' }) {
-  const paths = {
-    party: (
-      <>
-        <path d="M12 3.5l1.8 3.65 4.03.58-2.92 2.85.69 4.01L12 12.7l-3.6 1.89.69-4.01-2.92-2.85 4.03-.58L12 3.5z" />
-        <path d="M12 16.5v4" />
-      </>
-    ),
-    school: (
-      <>
-        <path d="M3 9.5L12 5l9 4.5-9 4.5-9-4.5z" />
-        <path d="M6.5 11.25v4.25c1.45 1.2 3.3 1.85 5.5 1.85s4.05-.65 5.5-1.85v-4.25" />
-        <path d="M20 10v5" />
-      </>
-    ),
-    youth: (
-      <>
-        <path d="M12 4c2.2 2.9 4.9 4.5 8 4.8-.35 5.15-3.08 8.92-8 11.2-4.92-2.28-7.65-6.05-8-11.2C7.1 8.5 9.8 6.9 12 4z" />
-        <path d="M9 12.4l2 2 4-4" />
-      </>
-    ),
-  } as const;
+import LotusPetalIcon from '../ui/LotusPetalIcon';
 
+function FooterIcon() {
   return (
-    <span className="mt-0.5 inline-flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-white/10 text-lotus-pink">
-      <svg
-        viewBox="0 0 24 24"
-        className="h-4 w-4"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        {paths[type]}
-      </svg>
+    <span className="mt-0.5 inline-flex h-7 w-7 flex-shrink-0 items-center justify-center text-white/60">
+      <LotusPetalIcon className="h-3.5 w-3.5" />
     </span>
   );
 }
@@ -69,19 +38,19 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 text-sm leading-relaxed text-white/60">
               <p className="flex gap-3">
-                <FooterIcon type="party" />
+                <FooterIcon />
                 <span>
                   Đảng ủy Ban Quản lý các Khu Chế xuất và Công nghiệp TP. Hồ Chí Minh
                 </span>
               </p>
               <p className="flex gap-3">
-                <FooterIcon type="school" />
+                <FooterIcon />
                 <span>
                   Chi bộ Trường Cao đẳng bán công Công nghệ và Quản trị doanh nghiệp
                 </span>
               </p>
               <p className="flex gap-3">
-                <FooterIcon type="youth" />
+                <FooterIcon />
                 <span>
                   Đoàn TNCS Hồ Chí Minh Trường CĐBC Công nghệ và Quản trị doanh nghiệp
                 </span>
@@ -119,8 +88,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
-            Nội dung mang tính chất tham khảo và giáo dục.
-            Cần kiểm chứng thông tin trước khi xuất bản chính thức.
+            Nội dung và hình ảnh chỉ phục vụ mục đích tham khảo, học tập;
+            không dùng làm nguồn trích dẫn hoặc căn cứ chính thức.
           </p>
           <p className="text-xs text-white/40">
             {new Date().getFullYear()}
