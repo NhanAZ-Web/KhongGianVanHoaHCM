@@ -10,7 +10,6 @@ const navItems = [
   { id: 'am-nhac', label: 'Âm nhạc' },
   { id: 'tuong-dai', label: 'Tượng đài' },
   { id: 'cau-chuyen', label: 'Câu chuyện' },
-  { id: 'nguon', label: 'Nguồn' },
 ]
 
 function MenuIcon() {
@@ -96,14 +95,15 @@ export default function Header() {
             onClick={() => scrollToSection('hero')}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-lotus-pink/10 flex items-center justify-center group-hover:bg-lotus-pink/20 transition-colors">
-              <svg viewBox="0 0 32 32" className="w-5 h-5 md:w-6 md:h-6">
-                <path d="M16 4 C16 4, 10 12, 10 18 C10 22, 12.5 25, 16 27 C19.5 25, 22 22, 22 18 C22 12, 16 4, 16 4Z" fill="#E85D8E" opacity="0.8"/>
-                <path d="M16 8 C16 8, 12 14, 12 18 C12 21, 13.5 23, 16 25 C18.5 23, 20 21, 20 18 C20 14, 16 8, 16 8Z" fill="#F5A0B8" opacity="0.6"/>
-              </svg>
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/85 flex items-center justify-center overflow-hidden shadow-sm ring-1 ring-lotus-pink/15 group-hover:ring-lotus-pink/35 transition">
+              <img
+                src={`${import.meta.env.BASE_URL}apple-touch-icon.png`}
+                alt="Logo Không gian Văn hóa Hồ Chí Minh"
+                className="h-full w-full object-cover"
+              />
             </div>
             <span className="font-heading font-bold text-sm md:text-base text-ink hidden sm:block">
-              KG Văn hóa HCM
+              Không gian Văn hóa Hồ Chí Minh
             </span>
           </button>
 

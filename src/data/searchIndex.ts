@@ -16,7 +16,7 @@ export function getSearchItems(): SearchItem[] {
     {
       sectionId: 'timeline',
       title: 'Dòng thời gian cuộc đời và sự nghiệp',
-      description: 'Các mốc chính từ năm 1890 đến di sản sau năm 1969.',
+      description: 'Hành trình lịch sử từ năm 1890 đến những giá trị di sản tiếp nối hôm nay.',
       keywords: ['timeline', 'mốc thời gian', 'cuộc đời', 'sự nghiệp'],
     },
     {
@@ -61,12 +61,6 @@ export function getSearchItems(): SearchItem[] {
       description:
         'Không gian cập nhật hoạt động Chi bộ, Đoàn Thanh niên CTIM và phong trào học tập, làm theo Bác.',
       keywords: ['gương sáng', 'đoàn thanh niên', 'CTIM', 'chi bộ', 'hoạt động'],
-    },
-    {
-      sectionId: 'nguon',
-      title: 'Nguồn tham khảo và kiểm chứng',
-      description: 'Nguồn dữ liệu, ghi chú bản quyền và danh sách tài nguyên cần bổ sung.',
-      keywords: ['nguồn', 'tham khảo', 'kiểm chứng'],
     },
   ];
 }

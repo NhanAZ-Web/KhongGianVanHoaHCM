@@ -31,6 +31,47 @@ const unitInfo = {
     'Đoàn TNCS Hồ Chí Minh Trường Cao đẳng bán công Công nghệ và Quản trị doanh nghiệp',
 };
 
+function UnitIcon({ type }: { type: 'party' | 'school' | 'youth' }) {
+  const paths = {
+    party: (
+      <>
+        <path d="M12 3.5l1.8 3.65 4.03.58-2.92 2.85.69 4.01L12 12.7l-3.6 1.89.69-4.01-2.92-2.85 4.03-.58L12 3.5z" />
+        <path d="M12 16.5v4" />
+      </>
+    ),
+    school: (
+      <>
+        <path d="M3 9.5L12 5l9 4.5-9 4.5-9-4.5z" />
+        <path d="M6.5 11.25v4.25c1.45 1.2 3.3 1.85 5.5 1.85s4.05-.65 5.5-1.85v-4.25" />
+        <path d="M20 10v5" />
+      </>
+    ),
+    youth: (
+      <>
+        <path d="M12 4c2.2 2.9 4.9 4.5 8 4.8-.35 5.15-3.08 8.92-8 11.2-4.92-2.28-7.65-6.05-8-11.2C7.1 8.5 9.8 6.9 12 4z" />
+        <path d="M9 12.4l2 2 4-4" />
+      </>
+    ),
+  } as const;
+
+  return (
+    <span className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-lotus-pale text-lotus-pink">
+      <svg
+        viewBox="0 0 24 24"
+        className="h-4 w-4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        {paths[type]}
+      </svg>
+    </span>
+  );
+}
+
 const ctimInfo = {
   shortName: 'Cao đẳng CTIM',
   fullName: 'Trường Cao đẳng bán công Công nghệ và Quản trị Doanh nghiệp',
@@ -755,44 +796,6 @@ const stories: Story[] = [
   },
 ];
 
-const sourceItems = [
-  {
-    title: 'CTIM - Giới thiệu trường',
-    description:
-      'Nguồn bổ sung tên tiếng Anh College of Technology and Industrial Management, tên đầy đủ của trường, địa chỉ, cơ sở vật chất và định hướng đào tạo của Cao đẳng CTIM.',
-  },
-  {
-    title: 'CTIM - Đảng, Đoàn thể',
-    description:
-      'Nguồn bổ sung cơ cấu Chi bộ, Công đoàn, Đoàn Thanh niên và các hoạt động Đoàn - phong trào thanh niên đang được CTIM công bố.',
-  },
-  {
-    title: 'CTIM - Chức năng, nhiệm vụ Đoàn trường',
-    description:
-      'Nguồn bổ sung vai trò Đoàn Thanh niên CTIM trong tập hợp, đoàn kết, giáo dục đoàn viên, sinh viên và tổ chức phong trào học tập, rèn luyện, tình nguyện.',
-  },
-  {
-    title: 'Trang Không gian Văn hóa Hồ Chí Minh gốc trên Canva',
-    description:
-      'Dùng để tham khảo cấu trúc mục, cách tổ chức không gian, nhịp trình bày và tinh thần thiết kế.',
-  },
-  {
-    title: 'Wikipedia tiếng Việt - Hồ Chí Minh',
-    description:
-      'Nguồn tham khảo mở cho tiểu sử tổng quan, tên gọi, mốc thời gian và bối cảnh lịch sử.',
-  },
-  {
-    title: 'Tư liệu Văn kiện Đảng - Tiểu sử Chủ tịch Hồ Chí Minh',
-    description:
-      'Nguồn chính thống để đối chiếu các thông tin tiểu sử, sự nghiệp cách mạng và văn kiện.',
-  },
-  {
-    title: 'Bộ data đã lọc trong repository',
-    description:
-      'Các file Markdown/JSON đã sắp xếp là nền nội dung để phát triển phiên bản chính thức.',
-  },
-];
-
 const roleModelActivities = [
   {
     title: 'Lễ tổng kết công tác Đoàn và phong trào thanh niên năm học 2024-2025',
@@ -962,23 +965,23 @@ export default function HomePage() {
               Không gian Văn hóa Hồ Chí Minh
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-gray-sub md:text-lg">
-              Một website tĩnh, tối giản và trang trọng để tìm hiểu cuộc đời,
-              sự nghiệp, tư tưởng, đạo đức, phong cách Hồ Chí Minh; đồng thời
-              kết nối với hoạt động học tập và làm theo Bác tại đơn vị.
+              Không gian số giới thiệu cuộc đời, sự nghiệp, tư tưởng, đạo đức
+              và phong cách Hồ Chí Minh; kết nối tư liệu lịch sử với hoạt động
+              học tập, rèn luyện và làm theo Bác của tuổi trẻ CTIM.
             </p>
 
-            <div className="mt-7 grid gap-3 text-sm text-gray-sub">
-              <p>
-                <span className="font-semibold text-ink">Cấp trên:</span>{' '}
-                {unitInfo.party}
+            <div className="mt-7 grid gap-3 text-sm leading-7 text-gray-sub">
+              <p className="flex gap-3">
+                <UnitIcon type="party" />
+                <span>{unitInfo.party}</span>
               </p>
-              <p>
-                <span className="font-semibold text-ink">Đơn vị:</span>{' '}
-                {unitInfo.cell}
+              <p className="flex gap-3">
+                <UnitIcon type="school" />
+                <span>{unitInfo.cell}</span>
               </p>
-              <p>
-                <span className="font-semibold text-ink">Thực hiện:</span>{' '}
-                {unitInfo.implementer}
+              <p className="flex gap-3">
+                <UnitIcon type="youth" />
+                <span>{unitInfo.implementer}</span>
               </p>
             </div>
 
@@ -1066,7 +1069,7 @@ export default function HomePage() {
         <SectionTitle
           id="ho-so"
           title="Hồ sơ Chủ tịch Hồ Chí Minh"
-          subtitle="Phần tóm tắt nhanh để người xem nắm thông tin cốt lõi trước khi đi sâu vào từng không gian nội dung."
+          subtitle="Những thông tin khái quát về thân thế, tên gọi, quê hương, vai trò lịch sử và di sản của Chủ tịch Hồ Chí Minh."
         />
         <Card className="mb-6 p-6" hover={false}>
           <p className="text-base leading-8 text-gray-sub">
@@ -1164,7 +1167,7 @@ export default function HomePage() {
           <SectionTitle
             id="timeline"
             title="Dòng thời gian cuộc đời và sự nghiệp"
-            subtitle="Các mốc chính được chia theo giai đoạn để dễ học, dễ kể chuyện và dễ mở rộng thành bản đồ tương tác."
+            subtitle="Hành trình từ quê hương Kim Liên, quá trình tìm đường cứu nước, lãnh đạo cách mạng đến những dấu ấn còn tiếp nối trong di sản hôm nay."
           />
           <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
             <div className="order-2 space-y-14 lg:order-1">
@@ -1268,7 +1271,7 @@ export default function HomePage() {
         <SectionTitle
           id="cuoc-doi"
           title="Địa điểm và hành trình cách mạng"
-          subtitle="Mỗi thẻ là một điểm dừng nội dung: có thể phát triển thành bài viết, ảnh tư liệu, bản đồ hoặc trạm tham quan ảo."
+          subtitle="Những địa danh gắn với bước đường hoạt động của Người, từ tuổi trẻ yêu nước đến các mốc lịch sử quan trọng của dân tộc."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {lifeCareerItems.map((item) => (
@@ -1299,7 +1302,7 @@ export default function HomePage() {
           <SectionTitle
             id="tu-tuong"
             title="Tư tưởng, đạo đức, phong cách Hồ Chí Minh"
-            subtitle="Khu vực này nên vừa đọc được, vừa tương tác được, để người xem không chỉ xem tư liệu mà còn tự soi chiếu vào hành động."
+            subtitle="Các chủ đề cốt lõi giúp người học hiểu sâu hơn về giá trị tư tưởng, đạo đức, phong cách của Người và liên hệ với việc rèn luyện hôm nay."
           />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {thoughtTopics.map((topic) => (
@@ -1398,7 +1401,7 @@ export default function HomePage() {
         <SectionTitle
           id="tac-pham"
           title="Tác phẩm và tư liệu tiêu biểu"
-          subtitle="Có thể phát triển thành thư viện đọc, mỗi tác phẩm có tóm tắt, bối cảnh ra đời, trích đoạn ngắn và liên kết nguồn."
+          subtitle="Tuyển chọn văn kiện, tác phẩm, bài viết và tư liệu có giá trị trong việc tìm hiểu tư tưởng, sự nghiệp cách mạng của Chủ tịch Hồ Chí Minh."
         />
         <FilterTabs
           tabs={workTabs}
@@ -1498,7 +1501,7 @@ export default function HomePage() {
         <SectionTitle
           id="tuong-dai"
           title="Tượng đài và không gian tưởng niệm trên thế giới"
-          subtitle="Phần này giúp mở rộng góc nhìn: di sản Hồ Chí Minh không chỉ ở Việt Nam mà còn được bạn bè quốc tế trân trọng."
+          subtitle="Những công trình, không gian tưởng niệm và dấu ấn văn hóa cho thấy tình cảm kính trọng của nhân dân thế giới đối với Chủ tịch Hồ Chí Minh."
         />
         <FilterTabs
           tabs={monumentTabs}
@@ -1545,7 +1548,7 @@ export default function HomePage() {
           <SectionTitle
             id="cau-chuyen"
             title="Câu chuyện về Bác"
-            subtitle="Mỗi câu chuyện nên đi kèm bài học và câu hỏi suy ngẫm để biến phần đọc thành hoạt động giáo dục."
+            subtitle="Những câu chuyện đời thường, giản dị mà sâu sắc, gợi mở bài học về lối sống, trách nhiệm, tình thương yêu con người và tinh thần phụng sự."
           />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {stories.map((story) => (
@@ -1652,41 +1655,6 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-white/70 py-16 md:py-20">
-        <div className="section-container">
-          <SectionTitle
-            id="nguon"
-            title="Nguồn tham khảo và danh mục cần bổ sung"
-            subtitle="Phần bắt buộc để website có độ tin cậy: nguồn, ảnh, audio/video và ghi chú bản quyền phải rõ ràng."
-          />
-          <div className="grid gap-5 md:grid-cols-2">
-            {sourceItems.map((source) => (
-              <Card key={source.title} className="p-5">
-                <h3 className="font-heading text-xl font-bold">
-                  {source.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-gray-sub">
-                  {source.description}
-                </p>
-              </Card>
-            ))}
-          </div>
-          <Card className="mt-6 p-6" hover={false}>
-            <h3 className="font-heading text-xl font-bold">
-              Checklist tài nguyên trước khi xuất bản
-            </h3>
-            <div className="mt-4 grid gap-3 text-sm text-gray-sub md:grid-cols-2">
-              <p>Ảnh chân dung và ảnh tư liệu có quyền sử dụng.</p>
-              <p>Ảnh địa điểm: Kim Liên, Dục Thanh, Bến Nhà Rồng, Ba Đình.</p>
-              <p>Ảnh tượng đài quốc tế kèm nguồn và ghi chú kiểm chứng.</p>
-              <p>Audio/video bài hát chỉ nhúng từ nguồn hợp pháp.</p>
-              <p>Thông tin hoạt động thật của Chi bộ và Đoàn trường.</p>
-              <p>Trang nguồn riêng để đối chiếu Wikipedia và Tư liệu Văn kiện Đảng.</p>
-            </div>
-          </Card>
         </div>
       </section>
 
