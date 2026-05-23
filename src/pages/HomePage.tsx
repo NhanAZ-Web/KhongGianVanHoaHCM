@@ -918,11 +918,6 @@ export default function HomePage() {
   const [selectedStory, setSelectedStory] = useState<Story | null>(null);
   const [quizAnswers, setQuizAnswers] = useState<Record<number, number>>({});
 
-  const filteredTimeline = useMemo(() => {
-    if (timelineFilter === 'all') return timelineData;
-    return timelineData.filter((period) => period.periodId === timelineFilter);
-  }, [timelineFilter]);
-
   const filteredWorks = useMemo(() => {
     if (workFilter === 'all') return works;
     return works.filter((work) => work.type === workFilter);
@@ -940,6 +935,11 @@ export default function HomePage() {
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToTimelinePeriod = (id: string) => {
+    setTimelineFilter(id);
+    scrollToSection(id === 'all' ? 'timeline' : `timeline-${id}`);
   };
 
   const setQuizAnswer = (questionId: number, optionIndex: number) => {
@@ -1165,8 +1165,12 @@ export default function HomePage() {
           />
           <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
             <div className="order-2 space-y-14 lg:order-1">
-              {filteredTimeline.map((period) => (
-                <section key={period.periodId}>
+              {timelineData.map((period) => (
+                <section
+                  key={period.periodId}
+                  id={`timeline-${period.periodId}`}
+                  className="scroll-mt-28"
+                >
                   <div className="mb-8 flex items-center gap-4">
                     <span className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-lotus-pink/35 to-lotus-pink/15 md:block" />
                     <div className="rounded-full border border-lotus-pink/30 bg-ivory px-5 py-2 text-center shadow-sm">
@@ -1243,7 +1247,7 @@ export default function HomePage() {
                     return (
                       <button
                         key={tab.id}
-                        onClick={() => setTimelineFilter(tab.id)}
+                        onClick={() => scrollToTimelinePeriod(tab.id)}
                         className={`min-w-fit rounded-full px-4 py-2 text-left text-sm font-medium transition lg:w-full lg:rounded-lg ${
                           isActive
                             ? 'bg-lotus-pink text-white shadow-sm'
