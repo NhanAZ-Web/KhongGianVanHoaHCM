@@ -1,0 +1,36 @@
+name: Build CTIM Single HTML
+
+on:
+  push:
+    branches: ['master']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build index.html
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build CTIM single HTML
+        run: npm run build:ctim-single
+
+      - name: Upload CTIM index.html
+        uses: actions/upload-artifact@v4
+        with:
+          name: ctim-index-html
+          path: dist-ctim/index.html
+          if-no-files-found: error

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:ctim-single": "tsc -b && vite build --config vite.config.ctim.ts && node scripts/ctim-single-html.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
